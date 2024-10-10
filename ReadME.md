@@ -12,7 +12,7 @@ HTML, CSS, JS
 
 ## Première partie :
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.]([https://myoctocat.com/assets/images/base-octocat.svg](https://i.ibb.co/nRnfrL2/Capture-d-e-cran-2024-10-10-a-15-14-23.png))
 
 Maquette :
 
