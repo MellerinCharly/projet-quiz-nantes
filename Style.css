@@ -12,10 +12,19 @@
   margin: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   box-sizing: border-box;
   font-family: var(--body-font);
-  /* overflow-y: hidden; */
+
+  display: flex;
+  flex-direction: column;
+
+
 }
 /* Nav bar */
 
@@ -52,12 +61,17 @@ nav img {
 /* Main */
 
 main {
+  flex: 1 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+
   height: 70vh;
   background-image: url("Images jeux/Image_background_ok.jpg");
+
+
+
 }
 
 h1 {
@@ -116,6 +130,7 @@ form {
 }
 /* Footer */
 footer {
+  flex-shrink: 0;
   background-color: var(--primary-color);
   height: 15vh;
   display: flex;
