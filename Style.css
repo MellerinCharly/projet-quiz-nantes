@@ -64,9 +64,8 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-
-  background-image: url("Images jeux/Image background.jpg");
-}
+  background-image: url("Images jeux/Image_background_ok.jpg");
+  }
 
 h1 {
   font-size: 50px;
