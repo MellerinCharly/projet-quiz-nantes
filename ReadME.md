@@ -25,7 +25,7 @@ HTML/CSS associés au JS
 
 ##  Démarrage :
 
-Il nous a fallu commencé par le wireframe. 
+Il nous a fallu commencer par le wireframe. 
 
 S'en suit un développement plus poussé du site sur figma (avec ajout des couleurs, des composants, typographie etc...)
 Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel lien ?)
