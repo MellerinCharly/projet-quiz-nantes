@@ -3,7 +3,7 @@
 
 ## Pour commencer,
 
-Nous nous sommes penché sur le concept d'un quiz sur Nantes avec des images de lieux Nantais pour in fine deviner où ils se trouvent.
+Nous nous sommes penché sur le concept d'un quiz sur Nantes avec des images de lieux Nantais pour, in fine, deviner où ils se trouvent.
 
 ## Pré-requis :
 
@@ -16,6 +16,8 @@ HTML, CSS, JS
 Wireframe :
 
 Maquette :
+
+Maquette en Responsive :
 
 
 ## Seconde partie :
@@ -58,5 +60,6 @@ Team KIPIK !
 
 (pour le lien mettez simplement l'URL de votre projet suivi de /contirubors)
 
-### License
-Ce produit est sous licence de la team KIPIK !
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
