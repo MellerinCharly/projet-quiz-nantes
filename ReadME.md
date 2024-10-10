@@ -13,7 +13,7 @@ HTML, CSS, JS
 ## Première partie :
 
 
-Wireframe :
+![Screenshot of the wireframe](https://ibb.co/t3xcBJf))
 
 Maquette :
 
@@ -58,8 +58,7 @@ Team KIPIK !
 - Github : MellerinCharly
   - Mail : mellerincharly.pro@gmail.com
 
-(pour le lien mettez simplement l'URL de votre projet suivi de /contirubors)
 
 > [!NOTE]
-> Useful information that users should know, even when skimming content.
+> 
 
