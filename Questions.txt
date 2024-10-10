@@ -1,0 +1,101 @@
+Question 01 : 
+
+Photo -> Tour Bretagne
+
+Réponses :
+01 - Tour Montparnasse
+02 - Tour LU
+03 - Tour Bretagne
+04 - Tour de Pise 
+
+Question 02 
+
+Photo -> Chateau d'Anne
+
+Réponses : 
+01 - Chateau des Ducs de Bretagne
+02 - Chateau de Versailles
+03 - Chateau de la Gaudinière
+04 - Chateau des Ducs de Nantes
+
+Question 03 
+
+Photo -> Ile de Versailles
+
+Réponses : 
+01 - Jardin des Plantes
+02 - Jardin de Versailles
+03 - Ile de Versailles
+04 - Ile des Plantes
+
+Question 04 
+
+Photo -> Hangar a bananes 
+
+Réponses : 
+
+01 - Chantier Naval
+02 - Village de Trentemoult
+03 - Hangar a bananes
+04 - Chantier de l'Atlantique
+
+Question 05 
+
+Photo -> Graslin
+
+Réponses : 
+
+01 - Place Commerce
+02 - Place Graslin
+03 - Place des grands hommes
+04 - Place du Bouffay
+
+Question 06 
+
+Photo -> Cathedrale Saint Pierre 
+
+01 - Cathédrale Notre-Dame de Nantes
+02 - Cathédrale Saint Jacques & Saint Michel
+03 - Cathédrale des ducs de Bretagne
+04 - Cathédrale Saint Pierre & Saint Paul
+
+Question 07 
+
+Photo -> Elephant
+
+01 - Les Machineries de Nantes
+02 - l'Elephant Géant
+03 - Le Machin truc bidule
+04 - Les Machines de l'Ile
+
+
+Question 08 
+
+Photo -> LU
+
+01 - La tour Bretagne
+02 - La tour de Garde 
+03 - La tour LU
+04 - La tour Enchantée
+
+Question 09 
+
+Photo -> Jardin extraordinaire
+
+01 - Le Jardin des Plantes
+02 - Le Jardin japonais
+03 - Le Jardin Extraordinaire
+04 - Le Jean Dujardin
+
+Question 10 
+
+Photo -> Wild 
+
+01 - L'Ecole sauvage du Code
+02 - La Capy Code School
+03 - Le Wild Koala
+04 - La Wild Code School
+
+
+
+
