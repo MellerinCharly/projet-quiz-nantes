@@ -12,11 +12,17 @@ HTML, CSS, JS
 
 ## Première partie :
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://i.ibb.co/nRnfrL2/Capture-d-e-cran-2024-10-10-a-15-14-23.png)
+Wireframe :
+
+![Screenshot of a wireframe.](https://i.ibb.co/nRnfrL2/Capture-d-e-cran-2024-10-10-a-15-14-23.png)
 
 Maquette :
 
+![Screenshot of maquette.](https://i.ibb.co/2MJk214/Capture-d-e-cran-2024-10-10-a-15-16-00.png)
+
 Maquette en Responsive :
+
+![Screenshot of Respnsive.](https://i.ibb.co/7NnWqyC/Capture-d-e-cran-2024-10-10-a-15-16-48.png)
 
 
 ## Seconde partie :
