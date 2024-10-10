@@ -1,20 +1,44 @@
 # NANTES QUEST
 
-##  Pour commencer,
+<<<<<<< HEAD
+
+## Pour commencer,
 
 Nous nous sommes penché sur le concept d'un quiz sur Nantes avec des images de lieux Nantais pour in fine deviner où ils se trouvent.
 
-##  Pré-requis :
+## Pré-requis :
 
 HTML, CSS, JS
 
-##  Première partie :
+## Première partie :
+
+=======
+
+## Pour commencer,
+
+Nous nous sommes penché sur le concept d'un quiz sur Nantes avec des images de lieux Nantais pour in fine deviner où ils se trouvent.
+
+## Pré-requis :
+
+HTML, CSS, JS
+
+## Première partie :
+
+> > > > > > > 957b4b4caeacb63aa29d8ca9d2096bd86424dcb2
 
 Wireframe :
 
 Maquette :
 
-##  Seconde partie :
+<<<<<<< HEAD
+
+## Seconde partie :
+
+=======
+
+## Seconde partie :
+
+> > > > > > > 957b4b4caeacb63aa29d8ca9d2096bd86424dcb2
 
 HTML/CSS associés au JS
 
@@ -23,9 +47,17 @@ HTML/CSS associés au JS
 - [ ] Création du footer
 - [ ] Partie JS
 
-##  Démarrage :
+<<<<<<< HEAD
 
-Il nous a fallu commencer par le wireframe. 
+## Démarrage :
+
+# Il nous a fallu commencé par le wireframe.
+
+## Démarrage :
+
+Il nous a fallu commencer par le wireframe.
+
+> > > > > > > 957b4b4caeacb63aa29d8ca9d2096bd86424dcb2
 
 S'en suit un développement plus poussé du site sur figma (avec ajout des couleurs, des composants, typographie etc...)
 Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel lien ?)
@@ -34,13 +66,29 @@ Responsive sur figma.
 
 Ajout des variables JS
 
-##  Fabriqué avec :
+<<<<<<< HEAD
+
+## Fabriqué avec :
+
+=======
+
+## Fabriqué avec :
+
+> > > > > > > 957b4b4caeacb63aa29d8ca9d2096bd86424dcb2
 
 VSCode (version 1.94)
 Figma (16.13. 3)
 Excalidraw
 
-##  Auteurs(trice) :
+<<<<<<< HEAD
+
+## Auteurs(trice) :
+
+=======
+
+## Auteurs(trice) :
+
+> > > > > > > 957b4b4caeacb63aa29d8ca9d2096bd86424dcb2
 
 Team KIPIK !
 
