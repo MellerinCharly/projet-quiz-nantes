@@ -1,44 +1,52 @@
-###### 1 NANTES QUEST
+# NANTES QUEST
 
-## A Pour commencer,
+## Pour commencer,
 
-Nous nous sommes penché sur le concept d'un quiz sur Nantes avec des images de lieux Nantais où il faut deviner où ils se trouvent.
+Nous nous sommes penché sur le concept d'un quiz sur Nantes avec des images de lieux Nantais pour in fine deviner où ils se trouvent.
 
-## A Pré-requis :
+## Pré-requis :
 
 HTML, CSS, JS
 
-## A Première partie :
+## Première partie :
 
 Wireframe :
 
 Maquette :
 
-## A Seconde partie :
+## Seconde partie :
 
-HTML associé au CSS
+HTML/CSS associés au JS
 
-Création de la nav-bar
-Création de la section Quiz
-Création du footer
+- [x] Création de la nav-bar
+- [x] Création de la section Quiz
+- [ ] Création du footer
+- [ ] Partie JS
 
-## A Démarrage :
+## Démarrage :
 
-Dites comment faire pour lancer votre projet
+Il nous a fallu commencé par le wireframe.
 
-## A Fabriqué avec :
+S'en suit un développement plus poussé du site sur figma (avec ajout des couleurs, des composants, typographie etc...)
+Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel lien ?)
+
+Responsive sur figma.
+
+Ajout des variables JS
+
+## Fabriqué avec :
 
 VSCode (version 1.94)
 Figma (16.13. 3)
 Excalidraw
 
-## A Auteurs(trice) :
+## Auteurs(trice) :
 
 Team KIPIK !
 
-MELLERIN Charly
-Github : MellerinCharly
-Mail : mellerincharly.pro@gmail.com
+- MELLERIN Charly
+- Github : MellerinCharly
+  - Mail : mellerincharly.pro@gmail.com
 
 (pour le lien mettez simplement l'URL de votre projet suivi de /contirubors)
 
