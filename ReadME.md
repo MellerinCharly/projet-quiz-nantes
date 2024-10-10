@@ -1,20 +1,32 @@
 # NANTES QUEST
 
-##  Pour commencer,
 
-Nous nous sommes penché sur le concept d'un quiz sur Nantes avec des images de lieux Nantais pour in fine deviner où ils se trouvent.
+## Pour commencer,
 
-##  Pré-requis :
+Nous nous sommes penché sur le concept d'un quiz sur Nantes avec des images de lieux Nantais pour, in fine, deviner où ils se trouvent.
+
+## Pré-requis :
 
 HTML, CSS, JS
 
-##  Première partie :
+
+## Première partie :
 
 Wireframe :
 
+![Screenshot of a wireframe.](https://i.ibb.co/nRnfrL2/Capture-d-e-cran-2024-10-10-a-15-14-23.png)
+
 Maquette :
 
-##  Seconde partie :
+![Screenshot of maquette.](https://i.ibb.co/2MJk214/Capture-d-e-cran-2024-10-10-a-15-16-00.png)
+
+Maquette en Responsive :
+
+![Screenshot of Respnsive.](https://i.ibb.co/7NnWqyC/Capture-d-e-cran-2024-10-10-a-15-16-48.png)
+
+
+## Seconde partie :
+
 
 HTML/CSS associés au JS
 
@@ -23,9 +35,9 @@ HTML/CSS associés au JS
 - [ ] Création du footer
 - [ ] Partie JS
 
-##  Démarrage :
+## Démarrage :
 
-Il nous a fallu commencé par le wireframe. 
+Il nous a fallu commencer par le wireframe.
 
 S'en suit un développement plus poussé du site sur figma (avec ajout des couleurs, des composants, typographie etc...)
 Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel lien ?)
@@ -34,13 +46,16 @@ Responsive sur figma.
 
 Ajout des variables JS
 
-##  Fabriqué avec :
+
+## Fabriqué avec :
+
 
 VSCode (version 1.94)
 Figma (16.13. 3)
 Excalidraw
 
-##  Auteurs(trice) :
+## Auteurs(trice) :
+
 
 Team KIPIK !
 
@@ -48,7 +63,7 @@ Team KIPIK !
 - Github : MellerinCharly
   - Mail : mellerincharly.pro@gmail.com
 
-(pour le lien mettez simplement l'URL de votre projet suivi de /contirubors)
 
-License
-Ce produit est sous licence de la team KIPIK !
+> [!NOTE]
+> 
+
