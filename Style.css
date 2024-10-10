@@ -1,6 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Grand+Hotel&display=swap");
+:root {
+  --primary-color: #ffd600;
+  --secondary-color: #6fbb7c;
+  --font-color: #000000;
+  --cta-color: #ffffff;
+  --body-font: "Afacad", sans-serif;
+  --title-font: "Grand Hotel";
+}
+
 * {
   margin: 0;
 }
+
 body {
   box-sizing: border-box;
+  font-family: var(--body-font);
+}
+
+nav {
+  /* height: 10vh; */
+  background-color: #ffd600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.links-wrapper {
+  padding-top: 16px;
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.links-wrapper a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+.links-wrapper a:hover {
+  text-decoration: underline solid 2px var(--font-color);
+  text-underline-offset: 8px;
+}
+
+nav img {
+  width: 150px;
+}
+
+.displaynone {
+  display: none;
 }
