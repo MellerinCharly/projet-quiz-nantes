@@ -15,7 +15,9 @@
 body {
   box-sizing: border-box;
   font-family: var(--body-font);
+  overflow-y: hidden;
 }
+/* Nav bar */
 
 nav {
   /* height: 10vh; */
@@ -47,6 +49,77 @@ nav img {
   width: 150px;
 }
 
+/* Main */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Card */
+.card {
+  border: #000000 3px solid;
+  height: 50vh;
+  width: 50vw;
+  border-radius: 20px;
+}
+
+/* .card-home {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+} */
+
+h2 {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-family: var(--body-font);
+  font-size: 3rem;
+  text-align: center;
+}
+form {
+  font-size: 2rem;
+}
+
+.cta {
+  width: 30vh;
+  padding: 15px;
+  border-radius: 20px;
+  color: var(--cta-color);
+  background-color: var(--secondary-color);
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  border: none;
+}
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer p {
+  font-size: 3ch;
+  font-weight: bold;
+}
 .displaynone {
   display: none;
 }
