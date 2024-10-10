@@ -13,7 +13,7 @@ HTML, CSS, JS
 ## Première partie :
 
 
-![Screenshot of the wireframe](https://ibb.co/t3xcBJf))
+![Screenshot of the wireframe](https://ibb.co/t3xcBJf)
 
 Maquette :
 
