@@ -13,8 +13,8 @@ Question 02
 Photo -> Chateau d'Anne
 
 Réponses : 
-01 - Chateau des Ducs de Bretagne
-02 - Chateau de Versailles
+01 - Chateau des Ducs de Bretagne -> ok 
+02 - Chateau d'Ax
 03 - Chateau de la Gaudinière
 04 - Chateau des Ducs de Nantes
 
@@ -36,7 +36,7 @@ Réponses :
 
 01 - Chantier Naval
 02 - Village de Trentemoult
-03 - Hangar a bananes
+03 - Hangar a bananes 
 04 - Chantier de l'Atlantique
 
 Question 05 
@@ -85,7 +85,7 @@ Photo -> Jardin extraordinaire
 01 - Le Jardin des Plantes
 02 - Le Jardin japonais
 03 - Le Jardin Extraordinaire
-04 - Le Jean Dujardin
+04 - Le Jean Dujardin 
 
 Question 10 
 
