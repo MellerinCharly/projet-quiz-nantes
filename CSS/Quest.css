@@ -3,25 +3,31 @@
 .card-card-quest {
   border: #000000 3px solid;
   height: 50vh;
-  width: 50vw;
+  width: 650px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 18px;
+  padding: 20px 15px 15px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.choice-wrapper {
+.quest-section {
+  display: flex;
+  align-items: center;
+  /* margin bottom: 10%; */
+}
+
+/* .choice-wrapper {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .choice {
-  width: 22vw;
-  height: 2vw;
-  margin: 0.7vw;
+  width: 300px;
+  height: 30px;
+  margin: 10px;
   background-color: #ffd600;
   font-family: var(--body-font);
   border-radius: 10px;
@@ -35,7 +41,95 @@
 }
 
 .image-quest {
-  width: 25vw;
+  width: 320px;
   height: auto;
   border-radius: 10px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 750px) {
+  .card-card-quest {
+    border: #000000 3px solid;
+    height: 75vh;
+    width: 450px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .quest-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .choice {
+    width: 300px;
+    height: 30px;
+    margin: 3px;
+    background-color: #ffd600;
+    font-family: var(--body-font);
+    border-radius: 10px;
+    border: none;
+    font-size: medium;
+  }
+
+  .image-quest {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .choices-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card-card-quest {
+    border: #000000 3px solid;
+    height: 70vh;
+    width: 80vw;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .quest-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .choice {
+    width: 65vw;
+    height: 30px;
+    margin: 3px;
+    background-color: #ffd600;
+    font-family: var(--body-font);
+    border-radius: 10px;
+    border: none;
+    font-size: medium;
+  }
+
+  .image-quest {
+    width: 75vw;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .choices-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
 }

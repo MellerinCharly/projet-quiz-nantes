@@ -63,22 +63,22 @@ Team KIPIK !
 
 - Émilie DE DUYER
 - Github : [EmiLy-Ly-san](https://github.com/EmiLy-Ly-san)
-  - Mail : emilie.deduyver@gmail.com
+  - :envelope:  emilie.deduyver@gmail.com
 
 
 - Valentin LOISEAU
 - Github : [vloiseau13](https://github.com/vloiseau13)
-  - Mail : valentin.loiseau13@gmail.com
+  - :envelope:  valentin.loiseau13@gmail.com
 
 
 - Romain LEMONNIER
 - Github : [RomainLmn44](https://github.com/RomainLmn44)
-  - Mail : lemonnier.romain13@gmail.com
+  - :envelope:  lemonnier.romain13@gmail.com
 
 
 - Charly MELLERIN
 - Github : [MellerinCharly](https://github.com/MellerinCharly)
-  - Mail : mellerincharly.pro@gmail.com
+  - :envelope:  mellerincharly.pro@gmail.com
 
 
 
@@ -154,22 +154,22 @@ Team KIPIK !
 
 - _Émilie DE DUYER_
 - _Github : [EmiLy-Ly-san](https://github.com/EmiLy-Ly-san)_
-  - _Mail : emilie.deduyver@gmail.com_
+  - :envelope:  _emilie.deduyver@gmail.com_
 
 
 - _Valentin LOISEAU_
 - _Github : [vloiseau13](https://github.com/vloiseau13)_
-    - Mail : _valentin.loiseau13@gmail.com_
+    - :envelope:  _valentin.loiseau13@gmail.com_
 
 
 - _Romain LEMONNIER_
 - _Github : [RomainLmn44](https://github.com/RomainLmn44)_
-  - _Mail : lemonnier.romain13@gmail.com_
+  - :envelope:  _lemonnier.romain13@gmail.com_
 
 
 - _Charly MELLERIN_
 - _Github : [MellerinCharly](https://github.com/MellerinCharly)_
-  - _Mail : mellerincharly.pro@gmail.com_
+  - :envelope:  _mellerincharly.pro@gmail.com_
 
 
 > [!Note]
