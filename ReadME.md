@@ -60,22 +60,22 @@ Excalidraw
 Team KIPIK !
 
 - Émilie DE DUYER
-- Github
-  - Mail :
+- Github : [EmiLy-Ly-san](https://github.com/EmiLy-Ly-san)
+  - Mail : emilie.deduyver@gmail.com
 
 
 - Valentin LOISEAU
-- Github :
-  - Mail : 
+- Github : [vloiseau13](https://github.com/vloiseau13)
+  - Mail : valentin.loiseau13@gmail.com
 
 
 - Romain LEMONNIER
-- Github :
-  - Mail :
+- Github : [RomainLmn44](https://github.com/RomainLmn44)
+  - Mail : lemonnier.romain13@gmail.com
 
 
-- MELLERIN Charly
-- Github : MellerinCharly
+- Charly MELLERIN
+- Github : [MellerinCharly](https://github.com/MellerinCharly)
   - Mail : mellerincharly.pro@gmail.com
 
 
