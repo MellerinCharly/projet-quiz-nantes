@@ -65,7 +65,15 @@ main {
   align-items: center;
   flex-direction: column;
   background-image: url("Images jeux/Image_background_ok.jpg");
+<<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+  }
+>>>>>>> 10b982eef728321d7fcd285b7dea7b4a4005ad92
+=======
+}
+>>>>>>> 880900c46ffa45186bed484bacd64e3e3c013ab8
 
 h1 {
   font-size: 50px;
@@ -76,6 +84,16 @@ h1 {
 }
 
 /* Card */
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 10b982eef728321d7fcd285b7dea7b4a4005ad92
+.displaynone {
+  display: none;
+}
+=======
+>>>>>>> 880900c46ffa45186bed484bacd64e3e3c013ab8
 
 .card {
   border: #000000 3px solid;
