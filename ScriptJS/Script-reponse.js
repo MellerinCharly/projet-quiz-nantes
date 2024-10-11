@@ -1,6 +1,6 @@
 export const quizGeoData = [
   {
-    picture: url("./Images jeux/tour-bretagne.jpg"),
+    picture: "/GameImage/tour-bretagne.jpg",
     answers: [
       { choice1: "Tour Montparnasse", correct: false },
       { choice2: "Tour LU", correct: false },
@@ -9,7 +9,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: url("./Images jeux/exterieur-chateau-des-ducs-de-bretagne.jpg"),
+    picture: "/GameImage/exterieur-chateau-des-ducs-de-bretagne.jpg",
     answers: [
       { choice1: "Chateau des Ducs de Bretagne", correct: true },
       { choice2: "Chateau d'Ax", correct: false },
@@ -18,7 +18,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: url("Images jeux/jardin-ile-de-versaille-scaled.jpeg"),
+    picture: "/GameImage/jardin-ile-de-versaille-scaled.jpeg",
     answers: [
       { choice1: "Jardin des Plantes", correct: false },
       { choice2: "Jardin de Versailles", correct: false },
@@ -27,7 +27,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: url("./Images jeux/063.jpg"),
+    picture: "/GameImage/063.jpg",
     answers: [
       { choice1: "Chantier Naval", correct: false },
       { choice2: "Village de Trentemoult", correct: false },
@@ -36,7 +36,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: url("./Images jeux/Graslin.jpg"),
+    picture: "/GameImage/Graslin.jpg",
     answers: [
       { choice1: "Place Commerce", correct: false },
       { choice2: "Place Graslin", correct: true },
@@ -45,7 +45,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: url("./Images jeux/2012_nantes_cathedrale_002.jpg"),
+    picture: "/GameImage/2012_nantes_cathedrale_002.jpg",
     answers: [
       { choice1: "Cathédrale Notre-Dame de Nantes", correct: false },
       { choice2: "Cathédrale Saint Jacques & Saint Michel", correct: false },
@@ -54,9 +54,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: url(
-      "./Images jeux/m_sozo-hotel-nantes-106286_1155x773_center_center.jpg"
-    ),
+    picture: "/GameImage/m_sozo-hotel-nantes-106286_1155x773_center_center.jpg",
     answers: [
       { choice1: "Les Machineries de Nantes", correct: false },
       { choice2: "L'Elephant Géant", correct: false },
@@ -65,7 +63,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: url("./Images jeux/8975.jpg"),
+    picture: "/GameImage/8975.jpg",
     answers: [
       { choice1: "La tour Bretagne", correct: false },
       { choice2: "La tour de Garde", correct: false },
@@ -74,7 +72,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: url("./Images jeux/Jardin-Extraordinaire-9226.jpg"),
+    picture: "/GameImage/Jardin-Extraordinaire-9226.jpg",
     answers: [
       { choice1: "Le Jardin des Plantes", correct: false },
       { choice2: "Le Jardin japonais", correct: false },
@@ -83,7 +81,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: url("./Images jeux/wild.png"),
+    picture: "/GameImage/wild.png",
     answers: [
       { choice1: "L'Ecole sauvage du Code", correct: false },
       { choice2: "La Capy Code School", correct: false },

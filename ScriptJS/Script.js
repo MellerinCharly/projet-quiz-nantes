@@ -1,7 +1,12 @@
-import { validation } from "./geo-script.js";
+import { startGeoQuiz } from "./geo-script.js";
+
+const launcherButton = document.querySelector(".launcherButton");
+console.log(launcherButton);
 
 export function runApplication() {
-  validation();
+  launcherButton.addEventListener("click", () => {
+    startGeoQuiz();
+  });
 }
 
 runApplication();
