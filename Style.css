@@ -69,6 +69,19 @@ h1 {
 }
 
 /* Card */
+
+.card-card-quest {
+  display: flex;
+}
+.text-quest {
+  display: flex;
+}
+
+.image-quest {
+  width: 250px;
+  height: auto;
+}
+
 /* .displaynone {
   display: none; */
 /* } */
