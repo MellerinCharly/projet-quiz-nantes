@@ -61,11 +61,11 @@ nav img {
 main {
   flex: 1 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /*center est le bon */
   align-items: center;
   flex-direction: column;
   background-image: url("Images jeux/Image_background_ok.jpg");
-  }
+}
 
 h1 {
   font-size: 50px;
@@ -76,9 +76,6 @@ h1 {
 }
 
 /* Card */
-.displaynone {
-  display: none;
-}
 
 .card {
   border: #000000 3px solid;
@@ -93,6 +90,16 @@ h1 {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+}
+
+.card-home form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-home form input {
+  height: 30px;
 }
 
 h2 {
@@ -136,4 +143,9 @@ footer {
 
 footer p {
   font-size: 1rem;
+}
+
+/*JS*/
+.displaynone {
+  display: none;
 }
