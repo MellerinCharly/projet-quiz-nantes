@@ -32,7 +32,7 @@ HTML/CSS associés au JS
 
 - [x] Création de la nav-bar
 - [x] Création de la section Quiz
-- [ ] Création du footer
+- [x] Création du footer
 - [ ] Partie JS
 
 ## Démarrage :
