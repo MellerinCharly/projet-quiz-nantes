@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Grand+Hotel&display=swap");
+@import "Quest.css";
+
 :root {
   --primary-color: #ffd600;
   --secondary-color: #6fbb7c;
@@ -75,8 +77,6 @@ h1 {
   margin: 15px;
 }
 
-/* Card */
-
 .card {
   border: #000000 3px solid;
   height: 50vh;
@@ -122,14 +122,16 @@ form {
 
 .cta {
   width: 30vh;
-  padding: 15px;
+  /* padding: 15px; */
   border-radius: 20px;
   color: var(--cta-color);
   background-color: var(--secondary-color);
   font-family: var(--title-font);
-  font-size: 1.5rem;
+  font-size: 2rem;
   border: none;
+  margin: 0.5vw;
 }
+
 /* Footer */
 footer {
   flex-shrink: 0;

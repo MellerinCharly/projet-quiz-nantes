@@ -1,0 +1,41 @@
+/* Card */
+
+.card-card-quest {
+  border: #000000 3px solid;
+  height: 50vh;
+  width: 50vw;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.choice-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice {
+  width: 22vw;
+  height: 2vw;
+  margin: 0.7vw;
+  background-color: #ffd600;
+  font-family: var(--body-font);
+  border-radius: 10px;
+  border: none;
+  font-size: medium;
+}
+
+.text-quest {
+  display: flex;
+  align-items: center;
+}
+
+.image-quest {
+  width: 25vw;
+  height: auto;
+  border-radius: 10px;
+}
