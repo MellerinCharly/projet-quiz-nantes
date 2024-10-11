@@ -64,10 +64,12 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-
-  height: 70vh;
   background-image: url("Images jeux/Image_background_ok.jpg");
+<<<<<<< HEAD
 }
+=======
+  }
+>>>>>>> 10b982eef728321d7fcd285b7dea7b4a4005ad92
 
 h1 {
   font-size: 50px;
@@ -78,7 +80,10 @@ h1 {
 }
 
 /* Card */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 10b982eef728321d7fcd285b7dea7b4a4005ad92
 .displaynone {
   display: none;
 }
@@ -88,6 +93,7 @@ h1 {
   height: 50vh;
   width: 50vw;
   border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .card-home {
@@ -110,6 +116,7 @@ h2 {
   font-size: 3rem;
   text-align: center;
 }
+
 form {
   font-size: 2rem;
 }
@@ -128,7 +135,7 @@ form {
 footer {
   flex-shrink: 0;
   background-color: var(--primary-color);
-  height: 15vh;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,6 +143,5 @@ footer {
 }
 
 footer p {
-  font-size: 3ch;
-  font-weight: bold;
+  font-size: 1rem;
 }
