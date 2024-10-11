@@ -89,20 +89,20 @@ Team KIPIK !
 
 
 
-*# ~ NANTES QUEST ~*
+# ~ _NANTES QUEST_ ~
 
 
-*## Let's begin,*
+## *Let's begin,*
 
 *We thought about the concept of a quiz about Nantes, with pictures of Nantes places. The goal is to find the location.*
 
 
-*## Prerequisites :*
+## *Prerequisites :*
 
 *HTML, CSS, JS*
 
 
-*## First-part :*
+## *First-part :*
 
 *Wireframe :*
 
@@ -117,17 +117,17 @@ Team KIPIK !
 *![Screenshot of Respnsive.](https://i.ibb.co/7NnWqyC/Capture-d-e-cran-2024-10-10-a-15-16-48.png)*
 
 
-*## Second part :*
+## *Second part :*
 
 
 *HTML/CSS with Javascript*
 
-*- [x] Creation of the nav-bar*
-*- [x] Creation of the quiz section*
-*- [x] Creation of the footer*
-*- [ ] Javascript part*
+- [x] _Creation of the nav-bar_
+- [x] _Creation of the quiz section_
+- [x] _Creation of the footer_
+- [ ] _Javascript part_
 
-*## Beginning :*
+## *Beginning :*
 
 *At first, we start with the creation of a Wirefram.*
 
@@ -140,38 +140,38 @@ Team KIPIK !
 *Adding the variables for Javascript*
 
 
-*## Made with :*
+## *Made with :*
 
 
 *VSCode (version 1.94),*
 *Figma (16.13. 3),*
 *Excalidraw*
 
-*## Makers :*
+## *Makers :*
 
 
 *Team KIPIK !*
 
-*- Émilie DE DUYER*
-*- Github : [EmiLy-Ly-san](https://github.com/EmiLy-Ly-san)*
-  *- Mail : emilie.deduyver@gmail.com*
+- _Émilie DE DUYER_
+- _Github : [EmiLy-Ly-san](https://github.com/EmiLy-Ly-san)_
+  - _Mail : emilie.deduyver@gmail.com_
 
 
-*- Valentin LOISEAU*
-*- Github : [vloiseau13](https://github.com/vloiseau13)*
-*  *- Mail : valentin.loiseau13@gmail.com*
+- _Valentin LOISEAU_
+- _Github : [vloiseau13](https://github.com/vloiseau13)_
+    - Mail : _valentin.loiseau13@gmail.com_
 
 
-*- Romain LEMONNIER*
-*- Github : [RomainLmn44](https://github.com/RomainLmn44)*
-  *- Mail : lemonnier.romain13@gmail.com*
+- _Romain LEMONNIER_
+- _Github : [RomainLmn44](https://github.com/RomainLmn44)_
+  - _Mail : lemonnier.romain13@gmail.com_
 
 
-*- Charly MELLERIN*
-*- Github : [MellerinCharly](https://github.com/MellerinCharly)*
- *- Mail : mellerincharly.pro@gmail.com*
+- _Charly MELLERIN_
+- _Github : [MellerinCharly](https://github.com/MellerinCharly)_
+  - _Mail : mellerincharly.pro@gmail.com_
 
 
-*> [!Note]*
+> [!Note]
 *“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” - Martin Fowler*
 
