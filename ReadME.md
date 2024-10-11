@@ -5,6 +5,8 @@
 
 Nous nous sommes penché sur le concept d'un quiz sur Nantes avec des images de lieux Nantais pour, in fine, deviner où ils se trouvent.
 
+
+
 ## Pré-requis :
 
 HTML, CSS, JS
