@@ -6,11 +6,10 @@ const questSection = document.querySelector(".quest-section");
 
 const validationButton = document.querySelector(".validationButton");
 const currentPicture = document.querySelector(".image-quest");
-const choice1 = document.querySelector(".choice1");
-const choice2 = document.querySelector(".choice2");
-const choice3 = document.querySelector(".choice3");
-const choice4 = document.querySelector(".choice4");
-const choices = document.querySelectorAll(".choice");
+// const choice1 = document.querySelector(".choice1");
+// const choice2 = document.querySelector(".choice2");
+// const choice3 = document.querySelector(".choice3");
+// const choice4 = document.querySelector(".choice4");
 
 let currentQuestionIndex = 0;
 let currentQuestion = quizGeoData[currentQuestionIndex];
@@ -26,10 +25,28 @@ export function startGeoQuiz() {
   console.log({ currentQuestion });
   currentPicture.src = currentQuestion.picture;
   console.log(currentPicture.src);
-  choice1.textContent = currentQuestion.answers[0].choice1;
-  choice2.textContent = currentQuestion.answers[1].choice2;
-  choice3.textContent = currentQuestion.answers[2].choice3;
-  choice4.textContent = currentQuestion.answers[3].choice4;
+
+  const choicesWrapper = document.querySelector(".choices-wrapper");
+  currentQuestion.answers.forEach((answer) => {
+    const choiceButton = document.createElement("button");
+    choiceButton.classList.add("choice");
+    choiceButton.textContent = answer.choice;
+    choicesWrapper.append(choiceButton);
+  });
+
+  // const choicesWrapper = document.querySelector(".choices-wrapper");
+  // choices.forEach((choice) => {
+  //   let index = -1;
+  //   const choiceButton = document.createElement("button");
+  //   choiceButton.classList.add("choice");
+  //   choiceButton.textContent = currentQuestion.answers[index + 1].choice;
+  //   choicesWrapper.append(choiceButton);
+  // });
+  // choice1.textContent = currentQuestion.answers[0].choice1;
+  // choice2.textContent = currentQuestion.answers[1].choice2;
+  // choice3.textContent = currentQuestion.answers[2].choice3;
+  // choice4.textContent = currentQuestion.answers[3].choice4;
+  const choices = document.querySelectorAll(".choice");
   choices.forEach((button) => {
     button.addEventListener("click", () => {
       button.id = "clicked";
@@ -44,11 +61,21 @@ export function startGeoQuiz() {
     });
   });
   validationButton.addEventListener("click", () => {
-    const goodAnswer = currentQuestion.answers.find((response) => {
-      response.correct === true;
-    });
-    if(choiceUser === goodAnswer.)
-  })
+    const goodAnswer = currentQuestion.answers.find(
+      (response) => response.correct === true
+    );
+    const buttonUserChoice = choices.find((button) => button.id === "clicked");
+    if (choiceUser === goodAnswer.choice) {
+      buttonUserChoice.style.background = "#6FBB7C";
+    } else {
+      buttonUserChoice.style.background = "#E65C0E";
+    }
+    console.log(goodAnswer);
+    console.log({ choiceok: goodAnswer.choice });
+
+    console.log(currentQuestion.answers);
+    console.log({ goodAnswer });
+  });
 }
 
-function giveCorrection() {}
+// function giveCorrection() {}
