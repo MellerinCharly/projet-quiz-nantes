@@ -2,15 +2,21 @@
 
 .card-card-quest {
   border: #000000 3px solid;
-  height: 50vh;
-  width: 50vw;
+  height: auto;
+  width: 50%;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 18px;
+  padding: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.quest-section {
+  display: flex;
+  align-items: center;
+  margin bottom: 10%;
 }
 
 .choice-wrapper {
@@ -19,8 +25,8 @@
 }
 
 .choice {
-  width: 22vw;
-  height: 2vw;
+  width: 80%;
+  height: 5%;
   margin: 0.7vw;
   background-color: #ffd600;
   font-family: var(--body-font);
@@ -35,7 +41,50 @@
 }
 
 .image-quest {
-  width: 25vw;
+  width: 50%;
   height: auto;
   border-radius: 10px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 700px) {
+  .card-card-quest {
+    border: #000000 3px solid;
+    height: 80%;
+    width: 65vw;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .quest-section {
+    display: flex;
+    align-content:center;
+    flex-direction: column-reverse;
+  }
+
+  .image-quest {
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .choice {
+    width: 80%;
+    height: 18%;
+    margin: 0 auto;
+    background-color: #ffd600;
+    font-family: var(--body-font);
+    border-radius: 10px;
+    border: none;
+    font-size: medium;
+  }
+
+  .choice-wrapper {
+     
 }
