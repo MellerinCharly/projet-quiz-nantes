@@ -4,9 +4,10 @@
 
 .card-score {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
 .card-score p {
@@ -27,4 +28,22 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 750px) {
+  .score-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .score-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
 }
