@@ -37,10 +37,10 @@ HTML/CSS associés au JS
 
 ## Démarrage :
 
-Il nous a fallu commencer par le wireframe.
+Pour démarrer notre quête, nous avons commencé par un wirefram. 
 
-S'en suit un développement plus poussé du site sur figma (avec ajout des couleurs, des composants, typographie etc...)
-Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel lien ?)
+S'en est suivi un développement plus poussé du site sur figma (avec ajout des couleurs, des composants, typographie etc...)
+Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel lien ?, Quel résultat ?, Comment l'afficher ? etc...)
 
 Responsive sur figma.
 
@@ -50,8 +50,8 @@ Ajout des variables JS
 ## Fabriqué avec :
 
 
-VSCode (version 1.94)
-Figma (16.13. 3)
+VSCode (version 1.94),
+Figma (16.13. 3),
 Excalidraw
 
 ## Auteurs(trice) :
