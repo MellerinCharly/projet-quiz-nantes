@@ -5,6 +5,8 @@
 
 Nous nous sommes penché sur le concept d'un quiz sur Nantes avec des images de lieux Nantais pour, in fine, deviner où ils se trouvent.
 
+
+
 ## Pré-requis :
 
 HTML, CSS, JS
@@ -32,15 +34,15 @@ HTML/CSS associés au JS
 
 - [x] Création de la nav-bar
 - [x] Création de la section Quiz
-- [ ] Création du footer
+- [x] Création du footer
 - [ ] Partie JS
 
 ## Démarrage :
 
-Il nous a fallu commencer par le wireframe.
+Pour démarrer notre quête, nous avons commencé par un wirefram. 
 
-S'en suit un développement plus poussé du site sur figma (avec ajout des couleurs, des composants, typographie etc...)
-Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel lien ?)
+S'en est suivi un développement plus poussé du site sur figma (avec ajout des couleurs, des composants, typographie etc...)
+Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel lien ?, Quel résultat ?, Comment l'afficher ? etc...)
 
 Responsive sur figma.
 
@@ -50,8 +52,8 @@ Ajout des variables JS
 ## Fabriqué avec :
 
 
-VSCode (version 1.94)
-Figma (16.13. 3)
+VSCode (version 1.94),
+Figma (16.13. 3),
 Excalidraw
 
 ## Auteurs(trice) :
@@ -60,25 +62,27 @@ Excalidraw
 Team KIPIK !
 
 - Émilie DE DUYER
-- Github
-  - Mail :
+- Github : [EmiLy-Ly-san](https://github.com/EmiLy-Ly-san)
+  - Mail : emilie.deduyver@gmail.com
 
 
 - Valentin LOISEAU
-- Github :
-  - Mail : 
+- Github : [vloiseau13](https://github.com/vloiseau13)
+  - Mail : valentin.loiseau13@gmail.com
 
 
 - Romain LEMONNIER
-- Github :
-  - Mail :
+- Github : [RomainLmn44](https://github.com/RomainLmn44)
+  - Mail : lemonnier.romain13@gmail.com
 
 
-- MELLERIN Charly
-- Github : MellerinCharly
+- Charly MELLERIN
+- Github : [MellerinCharly](https://github.com/MellerinCharly)
   - Mail : mellerincharly.pro@gmail.com
 
 
+
+
 > [!NOTE]
-> 
+> “N’importe quel idiot peut écrire du code qu'un ordinateur peut comprendre. Les bons programmeurs écrivent du code que les humains peuvent comprendre.” - Martin Fowler
 
