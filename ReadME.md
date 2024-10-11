@@ -1,4 +1,4 @@
-# NANTES QUEST
+# ~ NANTES QUEST ~
 
 
 ## Pour commencer,
@@ -58,6 +58,21 @@ Excalidraw
 
 
 Team KIPIK !
+
+- Émilie DE DUYER
+- Github
+  - Mail :
+
+
+- Valentin LOISEAU
+- Github :
+  - Mail : 
+
+
+- Romain LEMONNIER
+- Github :
+  - Mail :
+
 
 - MELLERIN Charly
 - Github : MellerinCharly
