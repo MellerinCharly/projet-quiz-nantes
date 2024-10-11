@@ -1,4 +1,4 @@
-const quizGeoData = [
+export const quizGeoData = [
   {
     picture: url("./Images jeux/tour-bretagne.jpg"),
     answers: [
