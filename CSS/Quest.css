@@ -1,28 +1,18 @@
 /* Card */
 
-.card-card-quest {
-  border: #000000 3px solid;
-  height: 50vh;
-  width: 650px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
+.quest-section {
   padding: 20px 15px 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-quest {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-
-.quest-section {
-  display: flex;
-  align-items: center;
-  /* margin bottom: 10%; */
-}
-
-/* .choice-wrapper {
-  display: flex;
-  flex-direction: column;
-} */
 
 .choice {
   width: 300px;
@@ -49,7 +39,7 @@
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 750px) {
-  .card-card-quest {
+  .card.card-quest {
     border: #000000 3px solid;
     height: 75vh;
     width: 450px;
@@ -62,7 +52,7 @@
     justify-content: space-around;
   }
 
-  .quest-section {
+  .text-quest {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -92,20 +82,20 @@
 }
 
 @media screen and (max-width: 550px) {
-  .card-card-quest {
+  .card.card-quest {
     border: #000000 3px solid;
     height: 70vh;
     width: 80vw;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 15px 10px 10px 10px;
+    padding: 10px 7px 7px 7px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
 
-  .quest-section {
+  .text-quest {
     display: flex;
     flex-direction: column-reverse;
   }
