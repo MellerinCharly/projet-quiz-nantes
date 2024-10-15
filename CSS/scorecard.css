@@ -1,9 +1,7 @@
 .score-section h2 {
   color: black;
 }
-
 /* comment  */
-
 .card-score {
   display: flex;
   justify-content: space-evenly;
@@ -11,13 +9,11 @@
   align-items: center;
   padding: 20px;
 }
-
 .card-score p {
   font-family: var(--body-font);
   font-size: 3rem;
   text-align: center;
 }
-
 .score-wrapper span {
   border-width: 1.5px;
   border-style: solid;
@@ -25,15 +21,12 @@
   border-radius: 5px;
   padding: 0 80px;
 }
-
 .score-wrapper {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-
 /*MEDIA QUERIES*/
-
 @media screen and (max-width: 750px) {
   .score-wrapper {
     display: flex;
@@ -41,7 +34,6 @@
     gap: 2px;
   }
 }
-
 @media screen and (max-width: 550px) {
   .score-wrapper {
     display: flex;
