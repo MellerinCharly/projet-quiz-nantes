@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nantes Quests</title>
-    <link rel="stylesheet" href="CSS/Style.css" />
-    <!-- comment -->
+    <link rel="stylesheet" href="./CSS/Style.css" />
+    <!-- CONFETTIS -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   </head>
   <body>
     <header>
@@ -37,27 +38,25 @@
       </section>
       <!-- Quest Card -->
 
-      <section class="quest-section">
-        <section class="card card-quest">
-          <article class="text-quest">
-            <div class="choices-wrapper">
-              <button class="choice">Les Machineries de Nantes</button>
-              <button class="choice">l'Elephant Géant</button>
-              <button class="choice">Les Machines de l'Ile</button>
-              <button class="choice">Le Machin truc bidule</button>
-            </div>
-            <img
-              class="image-quest"
-              src="GameImage/Machine de lile.jpg"
-              alt="Elephant Nantes"
-            />
-          </article>
-          <button class="cta quest">Valider</button>
-        </section>
+      <section class="quest-section displaynone">
+        <article class="card card-quest">
+          <div class="choices-wrapper">
+            <!-- <button class="choice choice1">Les Machineries de Nantes</button>
+            <button class="choice choice2">l'Elephant Géant</button>
+            <button class="choice choice3">Les Machines de l'Ile</button>
+            <button class="choice choice4">Le Machin truc bidule</button> -->
+          </div>
+          <img
+            class="image-quest"
+            src="GameImage/Machine de lile.jpg"
+            alt="Elephant Nantes"
+          />
+          <button class="cta quest validationButton">Valider</button>
+        </article>
       </section>
 
       <!-- Score Card -->
-      <section class="score-section">
+      <section class="score-section displaynone">
         <article class="card card-score">
           <h2>Bravo Joueur 1 <span class="currentUserName"></span> !</h2>
           <span>~</span>
@@ -73,5 +72,8 @@
     <footer>
       <p>©apyright | Team KipiK</p>
     </footer>
+    <script type="module">
+      import { runApplication } from "./ScriptJS/Script.js";
+    </script>  
   </body>
 </html>
