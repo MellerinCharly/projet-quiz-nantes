@@ -72,7 +72,7 @@ main {
   justify-content: center; /*center est le bon */
   align-items: center;
   flex-direction: column;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../GameImage/Image_background_ok.jpg);
 }
@@ -158,7 +158,6 @@ footer {
   flex-shrink: 0;
   background-color: var(--primary-color);
   height: 50px;
-  margin-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;

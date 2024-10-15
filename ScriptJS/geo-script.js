@@ -5,13 +5,14 @@ const quizzes = {
   historyQuiz: [],
 };
 
-//TODO: In my JS setNameUser in LocalStorage, confettis
+//TODO: In my JS setNameUser in LocalStorage
 //TODO: In HTML add quizzes buttons choices before the let's go button
 //TODO: In JS general add eventListener on quizes choices links of the nav to startQuiz(nameOfTheQuiz) + let underline on clicked link
 
 const USER_CHOICE_INDICATOR = "user-choice"; //conventions => for all importants constants who doesn't change -> in capital
 //and avoid to copy paste the new value if it changes in all the programm
 //and allow devs to use it in the whole programm
+const CONFETTI_CANVAS_ID = "confetti-canvas";
 
 export function startQuiz(quizName) {
   // VARIABLES DEFINITIONS
@@ -38,6 +39,13 @@ export function startQuiz(quizName) {
   let currentQuestion = currentQuizData[currentQuestionIndex];
   let choiceUser;
   let score = 0;
+
+  const removeConfettisCanvas = () => {
+    const canvas = document.querySelector(`#${CONFETTI_CANVAS_ID}`);
+    if (canvas) {
+      canvas.remove();
+    }
+  };
 
   const displayQuest = () => {
     homeSection.classList.add("displaynone");
@@ -125,11 +133,8 @@ export function startQuiz(quizName) {
   //CONFETTIS
 
   function giveConfettis() {
-    if (canvas) {
-      canvas.remove();
-    }
     const canvas = document.createElement("canvas");
-    canvas.id = "confetti-canvas";
+    canvas.id = CONFETTI_CANVAS_ID;
     cardScore.appendChild(canvas);
     const myConfetti = confetti.create(canvas, {
       resize: true,
@@ -157,6 +162,7 @@ export function startQuiz(quizName) {
   };
 
   // PROGRAM EXECUTION
+  removeConfettisCanvas();
   displayQuest();
   goToQuestion(currentQuestionIndex);
   validationButton.addEventListener("click", () => {
