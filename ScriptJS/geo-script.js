@@ -77,7 +77,7 @@ export function startQuiz(quizName) {
     validationButton.classList.remove("displaynone");
     removeNextButton();
     removeChoicesButtons();
-    // navLinkGeo.setAttribute("disabled", true);
+    navLinkGeo.classList.add("disabledButton");
   };
 
   const addListenerOnChoicesButtons = () => {
@@ -202,12 +202,12 @@ export function startQuiz(quizName) {
   }
 
   const giveScoreUser = () => {
+    navLinkGeo.classList.toggle("disabledButton");
     scorePlace.innerHTML = `${score} / ${currentQuizData.length}`;
     currentUserNamePlaces.forEach((place) => {
       place.textContent = currentUserName;
     });
     giveConfettis();
-    navLinkGeo.setAttribute("disabled", false);
   };
 
   const stopQuiz = () => {

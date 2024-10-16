@@ -200,6 +200,17 @@ footer p {
   pointer-events: none;
 }
 
+.disabledButton {
+  pointer-events: none;
+  text-decoration: underline solid 2px var(--font-color);
+  text-underline-offset: 8px;
+}
+.disabledChoices {
+  pointer-events: none;
+}
+.mandatory {
+  border: red 1px, solid;
+}
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 750px) {
@@ -209,6 +220,16 @@ footer p {
     width: 450px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.7);
+  }
+  .quiz-choices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cta-choice {
+    width: auto;
+    text-size-adjust: auto;
   }
 }
 
@@ -226,11 +247,4 @@ footer p {
     line-height: 50px;
   }
 }
-/*   }
-card-home
-  nav {
-    flex-direction: column;
-    gap: 0;
-  }
 
-} */

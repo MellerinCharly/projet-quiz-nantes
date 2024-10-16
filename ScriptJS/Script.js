@@ -68,5 +68,14 @@ homePage.addEventListener("click", () => {
   location.reload();
 });
 
-//PROGRAMM EXECUTION
+// Bug : Ne fonctionne toujours à rechecker
+const mandatoryName = document.querySelector("input");
+
+mandatoryName.addEventListener("keydown", (e) => {
+  if (!e.repeat) {
+    launcherButton.classList.toggle("disabledChoices");
+    mandatoryName.classList.remove("mandatory");
+  }
+});
+
 runApplication();
