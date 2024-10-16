@@ -1,3 +1,4 @@
+
 .score-section h2 {
   color: black;
 }
@@ -25,6 +26,16 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+#confetti-canvas {
+  position: fixed; 
+  z-index: 9999; 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh; 
+  pointer-events: none;
 }
 /*MEDIA QUERIES*/
 @media screen and (max-width: 750px) {
