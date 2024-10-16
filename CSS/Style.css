@@ -145,6 +145,10 @@ form {
   margin: 0.5vw;
   cursor: pointer;
 }
+
+.cta:hover {
+  cursor: pointer;
+}
 /* Footer */
 footer {
   flex-shrink: 0;
