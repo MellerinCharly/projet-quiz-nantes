@@ -1,4 +1,6 @@
 import { quizGeoData } from "./Script-reponse.js";
+import { navLinkGeo } from "./Script.js";
+
 const quizzes = {
   geoQuiz: quizGeoData,
   cultureQuiz: [],
@@ -67,6 +69,7 @@ export function startQuiz(quizName) {
     validationButton.classList.remove("displaynone");
     removeNextButton();
     removeChoicesButtons();
+    navLinkGeo.setAttribute("disabled", true);
   };
 
   const addListenerOnChoicesButtons = () => {
@@ -159,6 +162,7 @@ export function startQuiz(quizName) {
   const giveScoreUser = () => {
     scorePlace.innerHTML = `${score} / ${currentQuizData.length}`;
     giveConfettis();
+    navLinkGeo.setAttribute("disabled", false);
   };
 
   const stopQuiz = () => {
@@ -181,3 +185,5 @@ export function startQuiz(quizName) {
   });
   replayButton.addEventListener("click", replayQuiz);
 }
+
+// BOUTON ACCUEIL

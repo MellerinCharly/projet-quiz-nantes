@@ -36,12 +36,13 @@
 }
 
 .image-quest {
-  width: 320px;
-  height: auto;
+  width: 300px;
+  height: 220px;
   border-radius: 10px;
 }
 
 /*MEDIA QUERIES*/
+
 @media screen and (max-width: 750px) {
   .card.card-quest {
     border: #000000 3px solid;
@@ -53,13 +54,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
-
-  .text-quest {
+  .img-choice-wrapper {
     display: flex;
     flex-direction: column-reverse;
   }
+
+  /* .text-quest {
+    display: flex;
+    flex-direction: column-reverse;
+    
+  } */
 
   .choice {
     width: 300px;
@@ -73,19 +79,19 @@
   }
 
   .image-quest {
-    width: 400px;
-    height: auto;
+    width: 370px;
+    height: 250px;
     border-radius: 10px;
   }
 
   .choices-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin: 10px auto;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 580px) {
   .card.card-quest {
     border: #000000 3px solid;
     height: 70vh;
@@ -100,8 +106,8 @@
   }
 
   .text-quest {
-    display: flex;
-    flex-direction: column-reverse;
+    /* display: flex;
+    flex-direction: column-reverse; */
   }
 
   .choice {
@@ -117,7 +123,7 @@
 
   .image-quest {
     width: 75vw;
-    height: auto;
+
     border-radius: 10px;
   }
 
