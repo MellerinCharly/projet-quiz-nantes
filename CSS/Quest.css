@@ -16,6 +16,11 @@
 
 .img-choice-wrapper {
   display: flex;
+  
+}
+
+.choices-wrapper {
+  width: 50%;
 }
 
 .choice {
@@ -39,6 +44,15 @@
   width: 300px;
   height: 220px;
   border-radius: 10px;
+}
+
+.statement {
+  font-size: 30px;
+  font-weight: 200;
+  width: 50%;
+  text-align: center;
+  align-self: center;
+  
 }
 
 /*MEDIA QUERIES*/

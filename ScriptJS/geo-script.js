@@ -1,14 +1,17 @@
-import { quizGeoData } from "./Script-reponse.js";
+import {
+  quizCultureData,
+  quizGeoData,
+  quizHistoryData,
+} from "./Script-reponse.js";
 import { navLinkGeo } from "./Script.js";
 
 const quizzes = {
   geoQuiz: quizGeoData,
-  cultureQuiz: [],
-  historyQuiz: [],
+  historyQuiz: quizHistoryData,
+  cultureQuiz: quizCultureData,
 };
 
-//TODO: In HTML add quizzes buttons choices before the let's go button
-//TODO: In JS general add eventListener on quizes choices links of the nav to startQuiz(nameOfTheQuiz) + let underline on clicked link
+//TODO: In JS LocalStorage
 
 const USER_CHOICE_INDICATOR = "user-choice"; //conventions => for all importants constants who doesn't change -> in capital
 //and avoid to copy paste the new value if it changes in all the programm
@@ -18,13 +21,14 @@ const CONFETTI_CANVAS_ID = "confetti-canvas";
 export function startQuiz(quizName) {
   // VARIABLES DEFINITIONS
   const currentQuizData = quizzes[quizName];
-
+  const currentQuizName = quizName;
   const homeSection = document.querySelector(".home-section");
   const scoreSection = document.querySelector(".score-section");
   const questSection = document.querySelector(".quest-section");
 
   const validationButton = document.querySelector(".validationButton");
   const currentPicture = document.querySelector(".image-quest");
+  const statement = document.querySelector(".statement");
   const cardQuest = document.querySelector(".card-quest");
   const replayButton = document.querySelector(".replayButton");
 
@@ -69,7 +73,7 @@ export function startQuiz(quizName) {
     validationButton.classList.remove("displaynone");
     removeNextButton();
     removeChoicesButtons();
-    navLinkGeo.setAttribute("disabled", true);
+    // navLinkGeo.setAttribute("disabled", true);
   };
 
   const addListenerOnChoicesButtons = () => {
@@ -104,7 +108,14 @@ export function startQuiz(quizName) {
         choicesWrapper.append(choiceButton);
       });
       addListenerOnChoicesButtons();
-      currentPicture.src = currentQuestion.picture;
+      if (currentQuizData === quizzes["geoQuiz"]) {
+        statement.classList.add("displaynone");
+        currentPicture.classList.remove("displaynone");
+        currentPicture.src = currentQuestion.picture;
+      } else {
+        currentPicture.classList.add("displaynone");
+        statement.textContent = currentQuestion.question;
+      }
       currentQuestionIndex++;
     } else {
       stopQuiz();
@@ -172,7 +183,7 @@ export function startQuiz(quizName) {
   };
 
   const replayQuiz = () => {
-    startQuiz("geoQuiz");
+    startQuiz(currentQuizName);
   };
 
   // PROGRAM EXECUTION
