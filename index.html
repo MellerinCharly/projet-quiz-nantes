@@ -36,10 +36,17 @@
           <span>~</span>
           <form>
             <label for="name">Quel est ton nom ?</label>
-            <input type="text" name="name" id="userName" value="" required />
+            <input
+              type="text"
+              name="name"
+              id="userName"
+              value=""
+              class="mandatory" />
           </form>
           <div class="quiz-choices">
-            <button class="cta-choice launcherButton" type="button">
+            <button
+              class="cta-choice launcherButton disabledChoices"
+              type="button">
               Géographie
             </button>
             <button class="cta-choice launcherButton" type="button">

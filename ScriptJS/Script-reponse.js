@@ -93,9 +93,7 @@ export const quizGeoData = [
   },
 ];
 
-
 // History Part
-
 
 export const quizHistoryData = [
   {
@@ -190,12 +188,12 @@ export const quizHistoryData = [
   },
 ];
 
-
 // Culture Part
 
 export const quizCultureData = [
   {
-    question: "La ville moderne est dominée par la Tour de Bretagne, haute de 144m, dont la particularité est d'être :",
+    question:
+      "La ville moderne est dominée par la Tour de Bretagne, haute de 144m, dont la particularité est d'être :",
     answers: [
       { choice: "le 3eme plus haut building de province", correct: true },
       { choice: "Le plus petit building de province", correct: false },
@@ -204,7 +202,8 @@ export const quizCultureData = [
     ],
   },
   {
-    question: "Depuis 1984 les joueurs du FC Nantes évoluent sur le terrain de la Beaujoire. Le surnom le plus connu de l'équipe est 'les Canaris'. Quel est son autre surnom?",
+    question:
+      "Depuis 1984 les joueurs du FC Nantes évoluent sur le terrain de la Beaujoire. Le surnom le plus connu de l'équipe est 'les Canaris'. Quel est son autre surnom?",
     answers: [
       { choice: "La maison jaune", correct: true },
       { choice: "Le poulailler", correct: false },
@@ -213,7 +212,8 @@ export const quizCultureData = [
     ],
   },
   {
-    question: "Au nord de Nantes, quel est ce massif montagneux dont l'altitude dépasse rarement les 400m ?",
+    question:
+      "Au nord de Nantes, quel est ce massif montagneux dont l'altitude dépasse rarement les 400m ?",
     answers: [
       { choice: "Le Mordor", correct: false },
       { choice: "Les Ardennes", correct: false },
@@ -222,7 +222,8 @@ export const quizCultureData = [
     ],
   },
   {
-    question: "La ville de Nantes s'étend sur les deux rives du cours d'eau qui la traverse et qui est :",
+    question:
+      "La ville de Nantes s'étend sur les deux rives du cours d'eau qui la traverse et qui est :",
     answers: [
       { choice: "La Loire", correct: true },
       { choice: "Le Titicaca", correct: false },
@@ -231,7 +232,8 @@ export const quizCultureData = [
     ],
   },
   {
-    question: "Située près de l'océan Atlantique Nantes fut la capitale du Duché de Bretagne. De quelle région est-elle aujourd'hui la préfecture ?",
+    question:
+      "Située près de l'océan Atlantique Nantes fut la capitale du Duché de Bretagne. De quelle région est-elle aujourd'hui la préfecture ?",
     answers: [
       { choice: "Californie", correct: false },
       { choice: "Mikonos", correct: false },
