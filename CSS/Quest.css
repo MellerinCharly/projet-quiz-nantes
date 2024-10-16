@@ -30,6 +30,10 @@
   margin: 10px;
 }
 
+.choice:hover {
+  cursor: pointer;
+}
+
 .text-quest {
   display: flex;
   align-items: center;

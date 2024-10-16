@@ -26,6 +26,8 @@ Maquette en Responsive :
 
 ![Screenshot of Respnsive.](https://i.ibb.co/7NnWqyC/Capture-d-e-cran-2024-10-10-a-15-16-48.png)
 
+Rendu final :
+
 
 ## Seconde partie :
 
@@ -36,6 +38,7 @@ HTML/CSS associés au JS
 - [x] Création de la section Quiz
 - [x] Création du footer
 - [ ] Partie JS
+- [x] Création d'une home-card avec les catégories
 
 ## Démarrage :
 
@@ -47,6 +50,8 @@ Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel
 Responsive sur figma.
 
 Ajout des variables JS
+
+Ajout d'une home-card pour orienter l'utilisateur vers la catégorie qu'il souhaite
 
 
 ## Fabriqué avec :
