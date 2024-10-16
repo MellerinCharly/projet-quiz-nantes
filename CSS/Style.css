@@ -9,6 +9,7 @@
   --cta-color: #ffffff;
   --body-font: "Afacad", sans-serif;
   --title-font: "Grand Hotel";
+  --choice-color: #1763ad;
 }
 * {
   margin: 0;
@@ -39,14 +40,17 @@ nav {
   gap: 1rem;
   text-decoration: none;
 }
-.links-wrapper a {
+.nav-link {
   text-decoration: none;
+  background-color: var(--primary-color);
+  border: none;
   color: var(--font-color);
 }
-.links-wrapper a:hover {
+.nav-link:hover {
   text-decoration: underline solid 2px var(--font-color);
   text-underline-offset: 8px;
 }
+
 nav img {
   width: 150px;
 }
@@ -121,6 +125,25 @@ form {
   font-size: 2rem;
   border: none;
   margin: 0.5vw;
+  cursor: pointer;
+}
+.quiz-choices {
+  display: flex;
+  flex-direction: row;
+}
+.cta-choice {
+  background-color: #1763ad;
+  width: 9rem;
+  margin-top: 15px;
+  width: 30vh;
+  /* padding: 15px; */
+  border-radius: 20px;
+  color: var(--cta-color);
+  font-family: var(--title-font);
+  font-size: 2rem;
+  border: none;
+  margin: 0.5vw;
+  cursor: pointer;
 }
 /* Footer */
 footer {
@@ -160,9 +183,11 @@ footer p {
   }
   h1 {
     line-height: 50px;
-  }
+/*   }
+card-home
   nav {
     flex-direction: column;
     gap: 0;
   }
-}
+
+} */
