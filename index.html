@@ -13,13 +13,17 @@
   <body>
     <header>
       <nav>
-        <img src="ImagesIcones/LOGO NANTES QUEST GD.png" alt="" />
+        <img
+          src="ImagesIcones/LOGO NANTES QUEST GD.png"
+          alt=""
+          class="logo-home" />
         <div class="links-wrapper">
-          <a href="#">Quiz Géographie </a>
+          <!-- <a href="#" class="quiz-geo" att>Quiz Géographie </a> -->
+          <button class="quiz-geo nav-link">Quiz Géographie</button>
           <p>|</p>
-          <a href="#">Quiz Histoire </a>
+          <button class="quiz-histo nav-link">Quiz Histoire</button>
           <p>|</p>
-          <a href="#">Quiz Culture</a>
+          <button class="quiz-cultu nav-link">Quiz Culture</button>
         </div>
       </nav>
     </header>
@@ -28,35 +32,43 @@
       <!-- Home Card -->
       <section class="home-section">
         <article class="card card-home">
-          <h2>Bienvenue sur le Quiz Géographie !</h2>
+          <h2>Bienvenue sur Nantes Quest !</h2>
           <span>~</span>
           <form>
             <label for="name">Quel est ton nom ?</label>
-            <input type="text" name="name" id="userName" required />
+            <input type="text" name="name" id="userName" value="" required />
           </form>
-          <button class="cta launcherButton" type="button">Let's go !</button>
+          <div class="quiz-choices">
+            <button class="cta-choice launcherButton" type="button">
+              Géographie
+            </button>
+            <button class="cta-choice launcherButton" type="button">
+              Histoire
+            </button>
+            <button class="cta-choice launcherButton" type="button">
+              Culture
+            </button>
+          </div>
           <span>~</span>
         </article>
       </section>
       <!-- Quest Card -->
 
-      <section class="quest-section displaynone">
+      <section class="quest-section">
         <article class="card card-quest">
           <div class="img-choice-wrapper">
-          <div class="choices-wrapper">
+            <div class="choices-wrapper"></div>
+            <img
+              class="image-quest"
+              src="GameImage/Machine de lile.jpg"
+              alt="Elephant Nantes" />
           </div>
-          <img
-            class="image-quest"
-            src="GameImage/Machine de lile.jpg"
-            alt="Elephant Nantes"
-          />
-        </div>
           <button class="cta quest validationButton">Valider</button>
         </article>
       </section>
 
       <!-- Score Card -->
-      <section class="score-section displaynone">
+      <section class="score-section">
         <article class="card card-score">
           <h2>Bravo Joueur 1 <span class="currentUserName"></span> !</h2>
           <span>~</span>
@@ -74,6 +86,6 @@
     </footer>
     <script type="module">
       import { runApplication } from "./ScriptJS/Script.js";
-    </script>  
+    </script>
   </body>
 </html>
