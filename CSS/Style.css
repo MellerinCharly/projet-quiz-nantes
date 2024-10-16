@@ -164,6 +164,11 @@ form {
   cursor: pointer;
 }
 
+
+.cta:hover {
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
   flex-shrink: 0;
