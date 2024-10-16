@@ -140,6 +140,11 @@ export function startQuiz(quizName) {
       console.log({ scoreUser: score });
     } else {
       buttonUserChoice.style.background = "#E65C0E";
+      const choicesButtons = getChoicesButtons();
+      const correctButton = Array.from(choicesButtons).find(
+        (btn) => btn.textContent === goodAnswer.choice
+      );
+      correctButton.style.background = "#6FBB7C";
     }
   };
 

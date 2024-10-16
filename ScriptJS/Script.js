@@ -14,8 +14,9 @@ const setVariablesInLocalStorage = (property /*string*/, value) => {
   window.localStorage.setItem(property, value);
 };
 
-// const nameLabel = document.querySelector(".nameLabel");
-const whatsYrNameForm = document.querySelector(".whatsYrNameForm");
+const whatsYrNameFormContainer = document.querySelector(
+  ".whatsYrNameFormContainer"
+);
 const displayNameFormIfNecesarry = (localStorageProperty /*string*/) => {
   if (window.localStorage.getItem(localStorageProperty)) {
     const userNameFromLocalStorage =
@@ -24,37 +25,28 @@ const displayNameFormIfNecesarry = (localStorageProperty /*string*/) => {
     currentUserNamePlaces.forEach((place) => {
       place.textContent = currentUserName;
     });
+    const launchButtons = document.querySelectorAll(".cta-choice");
+    Array.from(launchButtons).forEach((btn) => {
+      btn.removeAttribute("disabled");
+    });
   } else {
-    whatsYrNameForm.classList.remove("displaynone");
+    whatsYrNameFormContainer.classList.remove("displaynone");
   }
 };
 
 export function runApplication() {
   displayNameFormIfNecesarry("userName");
   console.log({ currentUserName });
-  geoLauncherButton.addEventListener("click", () => {
-    if (currentUserName === "") {
-      currentUserName = inputUser.value;
-      setVariablesInLocalStorage("userName", currentUserName); //save preferences
-    }
-    startQuiz("geoQuiz");
-    console.log({ userName });
-  });
-  historyLauncherButton.addEventListener("click", () => {
-    if (currentUserName === "") {
-      currentUserName = inputUser.value;
-      setVariablesInLocalStorage("userName", currentUserName); //save preferences
-    }
-    startQuiz("historyQuiz");
-    console.log({ userName });
-  });
-  cultureLauncherButton.addEventListener("click", () => {
-    if (currentUserName === "") {
-      currentUserName = inputUser.value;
-      setVariablesInLocalStorage("userName", currentUserName); //save preferences
-    }
-    startQuiz("cultureQuiz");
-    console.log({ userName });
+  const quizzesButtons = document.querySelectorAll("button[data-quiz]");
+  quizzesButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      if (currentUserName === "") {
+        currentUserName = inputUser.value;
+        setVariablesInLocalStorage("userName", currentUserName); // save preferences
+      }
+      startQuiz(btn.dataset.quiz);
+      console.log({ userName });
+    });
   });
 }
 
@@ -69,12 +61,29 @@ homePage.addEventListener("click", () => {
 });
 
 // Bug : Ne fonctionne toujours à rechecker
-const mandatoryName = document.querySelector("input");
+// const mandatoryName = document.querySelector("input");
 
-mandatoryName.addEventListener("keydown", (e) => {
-  if (!e.repeat) {
-    launcherButton.classList.toggle("disabledChoices");
-    mandatoryName.classList.remove("mandatory");
+// mandatoryName.addEventListener("keydown", (e) => {
+//   if (!e.repeat) {
+//     console.log("coucou");
+//     geoLauncherButton.classList.toggle("disabledChoices");
+//     mandatoryName.classList.remove("mandatory");
+//   }
+// });
+
+inputUser.addEventListener("input", (e) => {
+  const launchButtons = document.querySelectorAll("button[data-quiz]");
+  if (inputUser.value.trim().length > 2) {
+    //trim() for cancel spaces + .length for min char, and so empty string is purchased
+    inputUser.classList.remove("mandatory");
+    Array.from(launchButtons).forEach((btn) => {
+      btn.removeAttribute("disabled");
+    });
+  } else {
+    inputUser.classList.add("mandatory");
+    Array.from(launchButtons).forEach((btn) => {
+      btn.setAttribute("disabled", true);
+    });
   }
 });
 

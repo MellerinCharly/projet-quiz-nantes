@@ -164,6 +164,10 @@ form {
   cursor: pointer;
 }
 
+.cta-choice:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 .cta:hover {
   cursor: pointer;
@@ -205,11 +209,16 @@ footer p {
   text-decoration: underline solid 2px var(--font-color);
   text-underline-offset: 8px;
 }
-.disabledChoices {
+/* .disabledChoices {
   pointer-events: none;
-}
+} */
 .mandatory {
-  border: red 1px, solid;
+  border: red 1px solid;
+}
+
+.mandatory:focus {
+  border: red 1px solid;
+  outline: none;
 }
 
 /*MEDIA QUERIES*/

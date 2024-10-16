@@ -34,20 +34,20 @@
         <article class="card card-home">
           <h2>Bienvenue sur Nantes Quest <span class="currentUserName"></span>!</h2>
           <span>~</span>
-          <div class="whatsYrNameForm displaynone">
-            <form >
+          <div class="whatsYrNameFormContainer displaynone">
+            <form id="formName">
               <label class="nameLabel " for="name">Quel est ton nom ?</label>
-              <input class="mandatory" type="text" name="name" id="userName" value="" required />
+              <input required class="mandatory" type="text" name="name" id="userName" value="" />
             </form>
           </div>
           <div class="quiz-choices">
-            <button class="cta-choice geoLauncherButton disabledChoices" type="button">
+            <button disabled class="cta-choice geoLauncherButton" data-quiz="geoQuiz" type="submit">
               Géographie
             </button>
-            <button class="cta-choice historyLauncherButton" type="button">
+            <button disabled class="cta-choice historyLauncherButton" data-quiz="historyQuiz" type="submit">
               Histoire
             </button>
-            <button class="cta-choice cultureLauncherButton" type="button">
+            <button disabled class="cta-choice cultureLauncherButton" data-quiz="cultureQuiz" type="submit">
               Culture
             </button>
           </div>
