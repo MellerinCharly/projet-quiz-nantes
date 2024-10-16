@@ -12,7 +12,7 @@ export function runApplication() {
   launcherButton.addEventListener("click", () => {
     userName = inputUser.value;
     startQuiz("geoQuiz");
-    navLinkGeo.setAttribute("disabled", true);
+    // navLinkGeo.setAttribute("disabled", true);
     console.log({ userName });
   });
 }
@@ -27,7 +27,14 @@ homePage.addEventListener("click", () => {
   location.reload();
 });
 
-// UserName
-// currentName.innerHTML = userName;
+// Bug : Ne fonctionne toujours à rechecker
+const mandatoryName = document.querySelector("input");
+
+mandatoryName.addEventListener("keydown", (e) => {
+  if (!e.repeat) {
+    launcherButton.classList.toggle("disabledChoices");
+    mandatoryName.classList.remove("mandatory");
+  }
+});
 
 runApplication();

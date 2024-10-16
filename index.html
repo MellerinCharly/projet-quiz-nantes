@@ -36,10 +36,17 @@
           <span>~</span>
           <form>
             <label for="name">Quel est ton nom ?</label>
-            <input type="text" name="name" id="userName" value="" required />
+            <input
+              type="text"
+              name="name"
+              id="userName"
+              value=""
+              class="mandatory" />
           </form>
           <div class="quiz-choices">
-            <button class="cta-choice launcherButton" type="button">
+            <button
+              class="cta-choice launcherButton disabledChoices"
+              type="button">
               Géographie
             </button>
             <button class="cta-choice launcherButton" type="button">
@@ -54,7 +61,7 @@
       </section>
       <!-- Quest Card -->
 
-      <section class="quest-section">
+      <section class="quest-section displaynone">
         <article class="card card-quest">
           <div class="img-choice-wrapper">
             <div class="choices-wrapper"></div>
@@ -68,7 +75,7 @@
       </section>
 
       <!-- Score Card -->
-      <section class="score-section">
+      <section class="score-section displaynone">
         <article class="card card-score">
           <h2>Bravo Joueur 1 <span class="currentUserName"></span> !</h2>
           <span>~</span>

@@ -54,7 +54,8 @@ export function startQuiz(quizName) {
     questSection.classList.remove("displaynone");
     scoreSection.classList.add("displaynone");
     validationButton.classList.remove("displaynone");
-    navLinkGeo.setAttribute("disabled", true);
+    navLinkGeo.classList.add("disabledButton");
+    // navLinkGeo.setAttribute("disabled", true);
   };
 
   const addListenerOnChoicesButtons = () => {
@@ -150,9 +151,9 @@ export function startQuiz(quizName) {
   }
 
   const giveScoreUser = () => {
+    navLinkGeo.classList.toggle("disabledButton");
     scorePlace.innerHTML = `${score} / ${currentQuizData.length}`;
     giveConfettis();
-    navLinkGeo.setAttribute("disabled", false);
   };
 
   const stopQuiz = () => {
@@ -176,4 +177,4 @@ export function startQuiz(quizName) {
   replayButton.addEventListener("click", replayQuiz);
 }
 
-// BOUTON ACCUEIL
+// BOUTON CHOIX
