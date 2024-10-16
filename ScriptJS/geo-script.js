@@ -3,7 +3,11 @@ import {
   quizGeoData,
   quizHistoryData,
 } from "./Script-reponse.js";
-import { navLinkGeo } from "./Script.js";
+import {
+  currentUserName,
+  currentUserNamePlaces,
+  navLinkGeo,
+} from "./Script.js";
 
 const quizzes = {
   geoQuiz: quizGeoData,
@@ -172,6 +176,9 @@ export function startQuiz(quizName) {
 
   const giveScoreUser = () => {
     scorePlace.innerHTML = `${score} / ${currentQuizData.length}`;
+    currentUserNamePlaces.forEach((place) => {
+      place.textContent = currentUserName;
+    });
     giveConfettis();
     navLinkGeo.setAttribute("disabled", false);
   };

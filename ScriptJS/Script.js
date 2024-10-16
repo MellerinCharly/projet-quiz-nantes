@@ -1,48 +1,59 @@
 import { startQuiz } from "./geo-script.js";
 
-let currentUserName;
+export let currentUserName = "";
 const inputUser = document.querySelector("#userName");
 const geoLauncherButton = document.querySelector(".geoLauncherButton");
 const historyLauncherButton = document.querySelector(".historyLauncherButton");
 const cultureLauncherButton = document.querySelector(".cultureLauncherButton");
 const homePage = document.querySelector(".logo-home");
 export const navLinkGeo = document.querySelector(".quiz-geo");
-// const currentName = document.querySelector(".currentUserName");
+export const currentUserNamePlaces =
+  document.querySelectorAll(".currentUserName");
 
 const setVariablesInLocalStorage = (property /*string*/, value) => {
   window.localStorage.setItem(property, value);
 };
 
-const getOrSetVariablesInLocalStorage = (property /*string*/) => {
-  if (window.localStorage.getItem("userName")) {
-    const userNameFromLocalStorage = window.localStorage.getItem("userName"); //get preferences if there are
+// const nameLabel = document.querySelector(".nameLabel");
+const whatsYrNameForm = document.querySelector(".whatsYrNameForm");
+const displayNameFormIfNecesarry = (localStorageProperty /*string*/) => {
+  if (window.localStorage.getItem(localStorageProperty)) {
+    const userNameFromLocalStorage =
+      window.localStorage.getItem(localStorageProperty); //get preferences if there are
     currentUserName = userNameFromLocalStorage;
+    currentUserNamePlaces.forEach((place) => {
+      place.textContent = currentUserName;
+    });
   } else {
-    currentUserName = inputUser.value;
-    setVariablesInLocalStorage("userName", currentUserName); //save preferences
+    whatsYrNameForm.classList.remove("displaynone");
   }
 };
 
 export function runApplication() {
+  displayNameFormIfNecesarry("userName");
+  console.log({ currentUserName });
   geoLauncherButton.addEventListener("click", () => {
-    currentUserName = inputUser.value;
-    setVariablesInLocalStorage("userName", currentUserName); //save preferences
+    if (currentUserName === "") {
+      currentUserName = inputUser.value;
+      setVariablesInLocalStorage("userName", currentUserName); //save preferences
+    }
     startQuiz("geoQuiz");
-    // navLinkGeo.setAttribute("disabled", true);
     console.log({ userName });
   });
   historyLauncherButton.addEventListener("click", () => {
-    currentUserName = inputUser.value;
-    setVariablesInLocalStorage("userName", currentUserName); //save preferences
+    if (currentUserName === "") {
+      currentUserName = inputUser.value;
+      setVariablesInLocalStorage("userName", currentUserName); //save preferences
+    }
     startQuiz("historyQuiz");
-    // navLinkGeo.setAttribute("disabled", true);
     console.log({ userName });
   });
   cultureLauncherButton.addEventListener("click", () => {
-    currentUserName = inputUser.value;
-    setVariablesInLocalStorage("userName", currentUserName); //save preferences
+    if (currentUserName === "") {
+      currentUserName = inputUser.value;
+      setVariablesInLocalStorage("userName", currentUserName); //save preferences
+    }
     startQuiz("cultureQuiz");
-    // navLinkGeo.setAttribute("disabled", true);
     console.log({ userName });
   });
 }
@@ -50,7 +61,6 @@ export function runApplication() {
 //NAVBAR BUTTONS
 navLinkGeo.addEventListener("click", () => {
   startQuiz("geoQuiz");
-  // navLinkGeo.setAttribute("disabled", true);
 });
 
 // Bouton Reload

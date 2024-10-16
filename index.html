@@ -32,12 +32,14 @@
       <!-- Home Card -->
       <section class="home-section">
         <article class="card card-home">
-          <h2>Bienvenue sur Nantes Quest !</h2>
+          <h2>Bienvenue sur Nantes Quest <span class="currentUserName"></span>!</h2>
           <span>~</span>
-          <form>
-            <label for="name">Quel est ton nom ?</label>
-            <input type="text" name="name" id="userName" value="" required />
-          </form>
+          <div class="whatsYrNameForm displaynone">
+            <form >
+              <label class="nameLabel " for="name">Quel est ton nom ?</label>
+              <input type="text" name="name" id="userName" value="" required />
+            </form>
+          </div>
           <div class="quiz-choices">
             <button class="cta-choice geoLauncherButton" type="button">
               Géographie
@@ -71,7 +73,7 @@
       <!-- Score Card -->
       <section class="score-section displaynone">
         <article class="card card-score">
-          <h2>Bravo Joueur 1 <span class="currentUserName"></span> !</h2>
+          <h2>Bravo <span class="currentUserName"></span> !</h2>
           <span>~</span>
           <div class="score-wrapper">
             <p>Ton score est :</p>
