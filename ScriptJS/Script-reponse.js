@@ -1,3 +1,5 @@
+//  Geo Part
+
 export const quizGeoData = [
   {
     picture: "/GameImage/tour-bretagne.jpg",
@@ -87,6 +89,199 @@ export const quizGeoData = [
       { choice: "La Capy Code School", correct: false },
       { choice: "Le Wild Koala", correct: false },
       { choice: "La Wild Code School", correct: true },
+    ],
+  },
+];
+
+
+// History Part
+
+
+export const quizHistoryData = [
+  {
+    question: "Où se trouve l’écrin du coeur d’Anne de Bretagne ?",
+    answers: [
+      { choice: "Musée Doré", correct: false },
+      { choice: "Julien Doré", correct: false },
+      { choice: "Musée d'Obrée", correct: true },
+      { choice: "La réponse D", correct: false },
+    ],
+  },
+  {
+    question: "En quelle année à été construit le passage Pommeraye ?",
+    answers: [
+      { choice: "1840", correct: true },
+      { choice: "2040", correct: false },
+      { choice: "À la Renaissance", correct: false },
+      { choice: "Hier", correct: false },
+    ],
+  },
+  {
+    question: "Quelle est la capacité d’accueil du théâtre Graslin ?",
+    answers: [
+      { choice: "8 milliards", correct: false },
+      { choice: "44", correct: false },
+      { choice: "784", correct: true },
+      { choice: "42 (la réponse à tout)", correct: false },
+    ],
+  },
+  {
+    question: "/Où est né Jules Verne ?",
+    answers: [
+      { choice: "Nantes", correct: true },
+      { choice: "Dans la Loire", correct: false },
+      { choice: "Chez ta mère", correct: false },
+      { choice: "Au sauna le Steamer", correct: false },
+    ],
+  },
+  {
+    question: "Comment s’appelait le bar au 32e étage de la tour Bretagne ?",
+    answers: [
+      { choice: "Le poussin Piou", correct: false },
+      { choice: "Le nid", correct: true },
+      { choice: "Le cacatoès", correct: false },
+      { choice: "Serdaigle", correct: false },
+    ],
+  },
+  {
+    question: "Quelle est la date de création de la Wild Code School ?",
+    answers: [
+      { choice: "42 ans", correct: false },
+      { choice: "31 février 2014", correct: false },
+      { choice: "28 février 24", correct: false },
+      { choice: "26 août 2013", correct: true },
+    ],
+  },
+  {
+    question: "Qui fut le dernier roi de Bretagne ?",
+    answers: [
+      { choice: "Grand Corps Malade", correct: false },
+      { choice: "Alexandre le Grand", correct: false },
+      { choice: "Alain le Grand", correct: true },
+      { choice: "Thanos le Grand", correct: false },
+    ],
+  },
+  {
+    question: "Quel est le nom de la Maire de Nantes ?",
+    answers: [
+      { choice: "Johanna Rolland", correct: true },
+      { choice: "Sonia Rolland", correct: false },
+      { choice: "Rollande-Garros", correct: false },
+      { choice: "Romain Rolland", correct: false },
+    ],
+  },
+  {
+    question: "Quel est la traduction bretonne de Nantes ?",
+    answers: [
+      { choice: "Naonerd", correct: false },
+      { choice: "Mermaid", correct: false },
+      { choice: "Naoned", correct: true },
+      { choice: "Mamerd", correct: false },
+    ],
+  },
+  {
+    question: "Comment était surnommé le quai de la Fosse ?",
+    answers: [
+      { choice: "Le quai du faux", correct: false },
+      { choice: "Le quai qui pue", correct: false },
+      { choice: "La quête faussaire", correct: false },
+      { choice: "Le quai de la fesse", correct: true },
+    ],
+  },
+];
+
+
+// Culture Part
+
+export const quizCultureData = [
+  {
+    question: "La ville moderne est dominée par la Tour de Bretagne, haute de 144m, dont la particularité est d'être :",
+    answers: [
+      { choice: "le 3eme plus haut building de province", correct: true },
+      { choice: "Le plus petit building de province", correct: false },
+      { choice: "Le plus haut building du monde", correct: false },
+      { choice: "Le plus grand building des Etats-Unis", correct: false },
+    ],
+  },
+  {
+    question: "Depuis 1984 les joueurs du FC Nantes évoluent sur le terrain de la Beaujoire. Le surnom le plus connu de l'équipe est 'les Canaris'. Quel est son autre surnom?",
+    answers: [
+      { choice: "La maison jaune", correct: true },
+      { choice: "Le poulailler", correct: false },
+      { choice: "Le nid", correct: false },
+      { choice: "La maison verte", correct: false },
+    ],
+  },
+  {
+    question: "Au nord de Nantes, quel est ce massif montagneux dont l'altitude dépasse rarement les 400m ?",
+    answers: [
+      { choice: "Le Mordor", correct: false },
+      { choice: "Les Ardennes", correct: false },
+      { choice: "Le massif Armoricain", correct: true },
+      { choice: "Les Balkans", correct: false },
+    ],
+  },
+  {
+    question: "La ville de Nantes s'étend sur les deux rives du cours d'eau qui la traverse et qui est :",
+    answers: [
+      { choice: "La Loire", correct: true },
+      { choice: "Le Titicaca", correct: false },
+      { choice: "Le Mississippi", correct: false },
+      { choice: "L'Erdre", correct: false },
+    ],
+  },
+  {
+    question: "Située près de l'océan Atlantique Nantes fut la capitale du Duché de Bretagne. De quelle région est-elle aujourd'hui la préfecture ?",
+    answers: [
+      { choice: "Californie", correct: false },
+      { choice: "Mikonos", correct: false },
+      { choice: "Bretagne", correct: false },
+      { choice: "Pays de la Loire", correct: true },
+    ],
+  },
+  {
+    question: "Quel est le premier album d'Ultra Vomit ?",
+    answers: [
+      { choice: "Panzer Surprise !", correct: false },
+      { choice: "Thunes", correct: false },
+      { choice: "Le pouvoir de la Puissance", correct: false },
+      { choice: "M. Patate", correct: true },
+    ],
+  },
+  {
+    question: "En quelle année a lieu le premier Hellfest ?",
+    answers: [
+      { choice: "2044", correct: false },
+      { choice: "1995", correct: false },
+      { choice: "2006", correct: true },
+      { choice: "-666 avant J-C", correct: false },
+    ],
+  },
+  {
+    question: "Combien a coûté le Grand Eléphant ?",
+    answers: [
+      { choice: "2 millions d'euros", correct: true },
+      { choice: "1 rein, 1 oeil, 1 bras", correct: false },
+      { choice: "Très cher !", correct: false },
+      { choice: "4.8 milliards", correct: false },
+    ],
+  },
+  {
+    question: "Quel YouTubeur est d'origine nantaise ?",
+    answers: [
+      { choice: "Aya Nakamura", correct: false },
+      { choice: "Cyprien", correct: false },
+      { choice: "Le joueur du Grenier (Bon anniversaire)", correct: true },
+      { choice: "Rémi Gaillard", correct: false },
+    ],
+  },
+  {
+    question: "Que représente les 4 coins du biscuit Lu ?",
+    answers: [
+      { choice: "Les 4 points cardinaux", correct: false },
+      { choice: "Les 4 éléments", correct: false },
+      { choice: "Le 5ème élément", correct: false },
+      { choice: "Les 4 ssaisons", correct: true },
     ],
   },
 ];
