@@ -5,7 +5,6 @@ const quizzes = {
   historyQuiz: [],
 };
 
-//TODO: In my JS setNameUser in LocalStorage
 //TODO: In HTML add quizzes buttons choices before the let's go button
 //TODO: In JS general add eventListener on quizes choices links of the nav to startQuiz(nameOfTheQuiz) + let underline on clicked link
 
@@ -47,11 +46,27 @@ export function startQuiz(quizName) {
     }
   };
 
-  const displayQuest = () => {
+  const removeNextButton = () => {
+    const nextButton = document.querySelector(".next-button");
+    if (nextButton) {
+      nextButton.remove();
+    }
+  };
+
+  const removeChoicesButtons = () => {
+    const choices = getChoicesButtons();
+    choices.forEach((buttonChoice) => {
+      buttonChoice.remove();
+    });
+  };
+
+  const updateCardQuest = () => {
     homeSection.classList.add("displaynone");
     questSection.classList.remove("displaynone");
     scoreSection.classList.add("displaynone");
     validationButton.classList.remove("displaynone");
+    removeNextButton();
+    removeChoicesButtons();
   };
 
   const addListenerOnChoicesButtons = () => {
@@ -72,10 +87,7 @@ export function startQuiz(quizName) {
   };
 
   const goToQuestion = (questionIndex) => {
-    const nextButton = document.querySelector(".next-button");
-    if (nextButton) {
-      nextButton.remove();
-    }
+    removeNextButton();
     currentQuestion = currentQuizData[questionIndex];
     console.log({ lengthData: currentQuizData.length });
     console.log({ lengthQuestionPassed: questionIndex });
@@ -114,14 +126,12 @@ export function startQuiz(quizName) {
   };
 
   const handleClickOnNextButton = () => {
-    const choices = getChoicesButtons();
-    choices.forEach((buttonChoice) => {
-      buttonChoice.remove();
-    });
+    removeChoicesButtons();
     goToQuestion(currentQuestionIndex + 1);
   };
 
   const createNextButton = () => {
+    removeNextButton();
     const nextButton = document.createElement("button");
     validationButton.classList.add("displaynone");
     nextButton.classList.add("cta", "quest", "next-button");
@@ -163,7 +173,7 @@ export function startQuiz(quizName) {
 
   // PROGRAM EXECUTION
   removeConfettisCanvas();
-  displayQuest();
+  updateCardQuest();
   goToQuestion(currentQuestionIndex);
   validationButton.addEventListener("click", () => {
     giveCorrection(getChoicesButtons());
