@@ -108,13 +108,18 @@ h1 {
   text-align: center;
   font-style: italic;
   font-weight: 500;
-  margin: 15px;
+  margin-bottom: 15px;
+}
+
+section {
+  height: 60%;
+  width: 50%;
 }
 
 .card {
   border: #000000 3px solid;
-  height: 92%;
-  width: 650px;
+  height: 100%;
+  width: 100%;
   padding: 15px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -146,7 +151,7 @@ h2 {
   line-height: 50px;
   font-size: 50px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 50px;
   font-weight: 300;
 }
 
@@ -171,10 +176,13 @@ form {
   margin: 0.5vw;
   cursor: pointer;
 }
+
 .quiz-choices {
   display: flex;
   flex-direction: row;
+  gap: 2rem;
 }
+
 .cta-choice {
   background-color: #1763ad;
   width: 9rem;
@@ -258,18 +266,30 @@ footer p {
 }
 
 /*MEDIA QUERIES*/
+@media screen and (max-width: 1300px) {
+  section {
+    height: 70%;
+  }
+  
+  .quiz-choices {
+    flex-direction: column;
+  }
+}
+
+
+
 @media screen and (max-width: 750px) {
+  
+
   .card {
     border: #000000 3px solid;
-    height: 50vh;
-    width: 450px;
+    /* height: 50vh;
+    width: 450px; */
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.7);
   }
   .quiz-choices {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
   }
   .cta-choice {
@@ -281,8 +301,8 @@ footer p {
 @media screen and (max-width: 580px) {
   .card {
     border: #000000 3px solid;
-    height: 50vh;
-    width: 80vw;
+    /* height: 50vh;
+    width: 80vw; */
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     margin-bottom: 40px;
