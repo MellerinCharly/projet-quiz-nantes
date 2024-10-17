@@ -56,11 +56,11 @@ nav {
   cursor: pointer;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   text-decoration: underline solid 2px var(--font-color);
   text-underline-offset: 8px;
   cursor: pointer;
-  
 }
 
 .nav-link:disabled {
@@ -204,12 +204,12 @@ footer p {
 
 /* CONFETTIS */
 #confetti-canvas {
-  position: fixed; 
-  z-index: 999; 
-  top: 0; 
-  left: 0; 
-  width: 100vw; 
-  height: 100vh; 
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   pointer-events: none;
 }
 
@@ -263,6 +263,12 @@ footer p {
 
   h1 {
     line-height: 50px;
+    font-size: 40px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 }
-
