@@ -123,10 +123,10 @@
     justify-content: space-around;
   }
 
-  .text-quest {
-    /* display: flex;
-    flex-direction: column-reverse; */
-  }
+  /* .text-quest {
+     display: flex;
+    flex-direction: column-reverse; 
+  } */
 
   .choice {
     width: 65vw;

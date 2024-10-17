@@ -40,7 +40,7 @@ nav {
   padding: 1rem;
 }
 
-.links-wrapper {
+.buttonsNav-wrapper {
   padding-top: 16px;
   display: flex;
   gap: 1rem;
@@ -52,11 +52,17 @@ nav {
   background-color: var(--primary-color);
   border: none;
   color: var(--font-color);
+  cursor: pointer;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link.active {
   text-decoration: underline solid 2px var(--font-color);
   text-underline-offset: 8px;
+}
+
+.nav-link:disabled {
+  cursor: initial;
+  text-decoration: none;
 }
 
 nav img {

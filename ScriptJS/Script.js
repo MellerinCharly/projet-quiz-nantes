@@ -2,9 +2,6 @@ import { startQuiz } from "./geo-script.js";
 
 export let currentUserName = "";
 const inputUser = document.querySelector("#userName");
-const geoLauncherButton = document.querySelector(".geoLauncherButton");
-const historyLauncherButton = document.querySelector(".historyLauncherButton");
-const cultureLauncherButton = document.querySelector(".cultureLauncherButton");
 const homePage = document.querySelector(".logo-home");
 export const navLinkGeo = document.querySelector(".quiz-geo");
 export const currentUserNamePlaces =
@@ -25,9 +22,10 @@ const displayNameFormIfNecesarry = (localStorageProperty /*string*/) => {
     currentUserNamePlaces.forEach((place) => {
       place.textContent = currentUserName;
     });
-    const launchButtons = document.querySelectorAll(".cta-choice");
+    const launchButtons = document.querySelectorAll("button[data-quiz]");
     Array.from(launchButtons).forEach((btn) => {
       btn.removeAttribute("disabled");
+      btn.title = "Démarrer le quiz";
     });
   } else {
     whatsYrNameFormContainer.classList.remove("displaynone");
@@ -39,12 +37,16 @@ export function runApplication() {
   console.log({ currentUserName });
   const quizzesButtons = document.querySelectorAll("button[data-quiz]");
   quizzesButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (event) => {
       if (currentUserName === "") {
         currentUserName = inputUser.value;
         setVariablesInLocalStorage("userName", currentUserName); // save preferences
       }
       startQuiz(btn.dataset.quiz);
+      quizzesButtons.forEach((quizBtn) => {
+        quizBtn.classList.remove("active");
+      });
+      event.currentTarget.classList.add("active");
       console.log({ userName });
     });
   });
@@ -65,7 +67,7 @@ homePage.addEventListener("click", () => {
 
 // mandatoryName.addEventListener("keydown", (e) => {
 //   if (!e.repeat) {
-//     console.log("coucou");
+//     console.log("coucou");b
 //     geoLauncherButton.classList.toggle("disabledChoices");
 //     mandatoryName.classList.remove("mandatory");
 //   }
@@ -78,11 +80,13 @@ inputUser.addEventListener("input", (e) => {
     inputUser.classList.remove("mandatory");
     Array.from(launchButtons).forEach((btn) => {
       btn.removeAttribute("disabled");
+      btn.title = "Démarrer le quiz";
     });
   } else {
     inputUser.classList.add("mandatory");
     Array.from(launchButtons).forEach((btn) => {
       btn.setAttribute("disabled", true);
+      btn.title = "Entrez d'abord votre nom avant de commencer un quiz.";
     });
   }
 });

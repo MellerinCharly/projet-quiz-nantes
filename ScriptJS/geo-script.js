@@ -77,7 +77,7 @@ export function startQuiz(quizName) {
     validationButton.classList.remove("displaynone");
     removeNextButton();
     removeChoicesButtons();
-    navLinkGeo.classList.add("disabledButton");
+    // navLinkGeo.classList.add("disabledButton");
   };
 
   const addListenerOnChoicesButtons = () => {
@@ -118,6 +118,7 @@ export function startQuiz(quizName) {
         currentPicture.src = currentQuestion.picture;
       } else {
         currentPicture.classList.add("displaynone");
+        statement.classList.remove("displaynone");
         statement.textContent = currentQuestion.question;
       }
       currentQuestionIndex++;
@@ -207,7 +208,7 @@ export function startQuiz(quizName) {
   }
 
   const giveScoreUser = () => {
-    navLinkGeo.classList.toggle("disabledButton");
+    // navLinkGeo.classList.toggle("disabledButton");
     scorePlace.innerHTML = `${score} / ${currentQuizData.length}`;
     currentUserNamePlaces.forEach((place) => {
       place.textContent = currentUserName;
