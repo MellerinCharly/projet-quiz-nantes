@@ -76,9 +76,7 @@
 }
 
 @media screen and (max-width: 750px) {
-    section {
-      height: 80vh;
-    }
+    
 
   .card.card-quest {
     border: #000000 3px solid;
@@ -117,6 +115,9 @@
 }
 
 @media screen and (max-width: 580px) {
+  section {
+    height: 90vh;
+  }
   .card.card-quest {
     border: #000000 3px solid;
     border-radius: 20px;
@@ -130,6 +131,7 @@
 
   .statement {
     width: 200px;
+    font-size: 22px;
   }
 
   .choice {
