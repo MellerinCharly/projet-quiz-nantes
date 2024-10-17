@@ -83,6 +83,15 @@ span {
   height: 50px;
 }
 
+.currentUserName {
+  display: inline-block;
+  color: var(--choice-color);
+}
+
+.currentUserName::first-letter {
+  text-transform: capitalize;
+}
+
 main {
   flex: 1 0 auto;
   display: flex;
