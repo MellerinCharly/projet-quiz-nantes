@@ -17,13 +17,13 @@
           src="ImagesIcones/LOGO NANTES QUEST GD.png"
           alt=""
           class="logo-home" />
-        <div class="links-wrapper">
+        <div class="buttonsNav-wrapper">
           <!-- <a href="#" class="quiz-geo" att>Quiz Géographie </a> -->
-          <button class="quiz-geo nav-link">Quiz Géographie</button>
+          <button class="quiz-geo nav-link" data-quiz="geoQuiz" disabled title="Entrez d'abord votre nom avant de commencer un quiz.">Quiz Géographie</button>
           <p>|</p>
-          <button class="quiz-histo nav-link">Quiz Histoire</button>
+          <button class="quiz-histo nav-link" data-quiz="historyQuiz" disabled title="Entrez d'abord votre nom avant de commencer un quiz.">Quiz Histoire</button>
           <p>|</p>
-          <button class="quiz-cultu nav-link">Quiz Culture</button>
+          <button class="quiz-cultu nav-link" data-quiz="cultureQuiz" disabled title="Entrez d'abord votre nom avant de commencer un quiz.">Quiz Culture</button>
         </div>
       </nav>
     </header>
@@ -32,27 +32,22 @@
       <!-- Home Card -->
       <section class="home-section">
         <article class="card card-home">
-          <h2>Bienvenue sur Nantes Quest !</h2>
+          <h2>Bienvenue sur Nantes Quest <span class="currentUserName"></span>!</h2>
           <span>~</span>
-          <form>
-            <label for="name">Quel est ton nom ?</label>
-            <input
-              type="text"
-              name="name"
-              id="userName"
-              value=""
-              class="mandatory" />
-          </form>
+          <div class="whatsYrNameFormContainer displaynone">
+            <form id="formName">
+              <label class="nameLabel " for="name">Quel est ton nom ?</label>
+              <input required class="mandatory" type="text" name="name" id="userName" value="" />
+            </form>
+          </div>
           <div class="quiz-choices">
-            <button
-              class="cta-choice launcherButton disabledChoices"
-              type="button">
+            <button disabled class="cta-choice geoLauncherButton" data-quiz="geoQuiz" type="submit">
               Géographie
             </button>
-            <button class="cta-choice launcherButton" type="button">
+            <button disabled class="cta-choice historyLauncherButton" data-quiz="historyQuiz" type="submit">
               Histoire
             </button>
-            <button class="cta-choice launcherButton" type="button">
+            <button disabled class="cta-choice cultureLauncherButton" data-quiz="cultureQuiz" type="submit">
               Culture
             </button>
           </div>
@@ -65,6 +60,7 @@
         <article class="card card-quest">
           <div class="img-choice-wrapper">
             <div class="choices-wrapper"></div>
+            <p class="statement"></p>
             <img
               class="image-quest"
               src="GameImage/Machine de lile.jpg"
@@ -77,7 +73,7 @@
       <!-- Score Card -->
       <section class="score-section displaynone">
         <article class="card card-score">
-          <h2>Bravo Joueur 1 <span class="currentUserName"></span> !</h2>
+          <h2>Bravo <span class="currentUserName"></span> !</h2>
           <span>~</span>
           <div class="score-wrapper">
             <p>Ton score est :</p>

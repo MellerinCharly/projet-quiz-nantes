@@ -12,19 +12,23 @@
   --title-font: "Grand Hotel";
   --choice-color: #1763ad;
 }
+
 * {
   margin: 0;
 }
+
 html,
 body {
   height: 100%;
 }
+
 body {
   box-sizing: border-box;
   font-family: var(--body-font);
   display: flex;
   flex-direction: column;
 }
+
 /* Nav bar */
 nav {
   /* height: 10vh; */
@@ -35,32 +39,43 @@ nav {
   gap: 2.5rem;
   padding: 1rem;
 }
-.links-wrapper {
+
+.buttonsNav-wrapper {
   padding-top: 16px;
   display: flex;
   gap: 1rem;
   text-decoration: none;
 }
+
 .nav-link {
   text-decoration: none;
   background-color: var(--primary-color);
   border: none;
   color: var(--font-color);
+  cursor: pointer;
 }
-.nav-link:hover {
+
+.nav-link:hover, .nav-link.active {
   text-decoration: underline solid 2px var(--font-color);
   text-underline-offset: 8px;
+}
+
+.nav-link:disabled {
+  cursor: initial;
+  text-decoration: none;
 }
 
 nav img {
   width: 150px;
 }
+
 /* Main */
 span {
   font-size: 50px;
   width: auto;
   height: 50px;
 }
+
 main {
   flex: 1 0 auto;
   display: flex;
@@ -71,6 +86,7 @@ main {
   background-repeat: no-repeat;
   background-image: url(../GameImage/Image_background_ok.jpg);
 }
+
 h1 {
   font-size: 50px;
   text-align: center;
@@ -78,6 +94,7 @@ h1 {
   font-weight: 500;
   margin: 15px;
 }
+
 .card {
   border: #000000 3px solid;
   height: 92%;
@@ -86,20 +103,24 @@ h1 {
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.7);
 }
+
 .card-home {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
+
 .card-home form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .card-home form input {
   height: 30px;
 }
+
 h2 {
   font-family: var(--title-font);
   line-height: 50px;
@@ -108,14 +129,17 @@ h2 {
   padding-top: 10px;
   font-weight: 300;
 }
+
 .card-home p {
   font-family: var(--body-font);
   font-size: 3rem;
   text-align: center;
 }
+
 form {
   font-size: 2rem;
 }
+
 .cta {
   width: 30vh;
   /* padding: 15px; */
@@ -146,9 +170,15 @@ form {
   cursor: pointer;
 }
 
+.cta-choice:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .cta:hover {
   cursor: pointer;
 }
+
 /* Footer */
 footer {
   flex-shrink: 0;
@@ -159,24 +189,44 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+
 footer p {
   font-size: 1rem;
 }
+
 /*JS*/
 .displaynone {
   display: none;
 }
+
+/* CONFETTIS */
+#confetti-canvas {
+  position: fixed; 
+  z-index: 999; 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh; 
+  pointer-events: none;
+}
+
 .disabledButton {
   pointer-events: none;
   text-decoration: underline solid 2px var(--font-color);
   text-underline-offset: 8px;
 }
-.disabledChoices {
+/* .disabledChoices {
   pointer-events: none;
-}
+} */
 .mandatory {
-  border: red 1px, solid;
+  border: red 1px solid;
 }
+
+.mandatory:focus {
+  border: red 1px solid;
+  outline: none;
+}
+
 /*MEDIA QUERIES*/
 @media screen and (max-width: 750px) {
   .card {
@@ -197,6 +247,7 @@ footer p {
     text-size-adjust: auto;
   }
 }
+
 @media screen and (max-width: 580px) {
   .card {
     border: #000000 3px solid;
@@ -206,15 +257,9 @@ footer p {
     background-color: rgba(255, 255, 255, 0.7);
     margin-bottom: 40px;
   }
-}
-h1 {
-  line-height: 50px;
-}
-/*   }
-card-home
-  nav {
-    flex-direction: column;
-    gap: 0;
-  }
 
-} */
+  h1 {
+    line-height: 50px;
+  }
+}
+
