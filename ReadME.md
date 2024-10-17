@@ -55,7 +55,7 @@ Ajout des variables JS.
 
 Ajout d'une home-card pour orienter l'utilisateur vers la catégorie qu'il souhaite.
 
-Ajout des confétis lors de l'affichage du score.
+Ajout des confettis lors de l'affichage du score.
 
 Impossibilité d'aller dans une catégorie sans mettre un nom. 
 
@@ -144,7 +144,7 @@ Rendu final :
 - [x] _Creation of the nav-bar_
 - [x] _Creation of the quiz section_
 - [x] _Creation of the footer_
-- [ ] _Javascript part_
+- [x] _Javascript part_
 
 ## *Beginning :*
 
