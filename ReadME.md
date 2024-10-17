@@ -145,7 +145,7 @@ Rendu final :
 - [x] _Creation of the quiz section_
 - [x] _Creation of the footer_
 - [x] _Javascript part_
-- [x] _*Creation of a home-card with categories*
+- [x] _Creation of a home-card with categories_
 
 
 ## *Beginning :*
