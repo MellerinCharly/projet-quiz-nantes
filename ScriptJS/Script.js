@@ -14,6 +14,7 @@ const setVariablesInLocalStorage = (property /*string*/, value) => {
 const whatsYrNameFormContainer = document.querySelector(
   ".whatsYrNameFormContainer"
 );
+
 const displayNameFormIfNecesarry = (localStorageProperty /*string*/) => {
   if (window.localStorage.getItem(localStorageProperty)) {
     const userNameFromLocalStorage =
@@ -67,31 +68,15 @@ export function runApplication() {
   });
 }
 
-//NAVBAR BUTTONS
-// navLinkGeo.addEventListener("click", () => {
-//   startQuiz("geoQuiz");
-// });
-
-// Bouton Reload
+// LOGO -> RELOAD
 homePage.addEventListener("click", () => {
   location.reload();
 });
 
-// Bug : Ne fonctionne toujours à rechecker
-// const mandatoryName = document.querySelector("input");
-
-// mandatoryName.addEventListener("keydown", (e) => {
-//   if (!e.repeat) {
-//     console.log("coucou");b
-//     geoLauncherButton.classList.toggle("disabledChoices");
-//     mandatoryName.classList.remove("mandatory");
-//   }
-// });
-
+// INPUT FILTER
 inputUser.addEventListener("input", (e) => {
   const launchButtons = document.querySelectorAll("button[data-quiz]");
   if (inputUser.value.trim().length > 2) {
-    //trim() for cancel spaces + .length for min char, and so empty string is purchased
     inputUser.classList.remove("mandatory");
     Array.from(launchButtons).forEach((btn) => {
       btn.removeAttribute("disabled");

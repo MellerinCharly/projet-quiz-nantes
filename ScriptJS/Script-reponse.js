@@ -233,7 +233,7 @@ export const quizCultureData = [
   },
   {
     question:
-      "Située près de l'océan Atlantique, Nantes fut la capitale du Duché de Bretagne. De quelle région est-elle aujourd'hui la préfecture ?",
+      "Nantes fut la capitale du Duché de Bretagne. De quelle région est-elle aujourd'hui la préfecture ?",
     answers: [
       { choice: "Californie", correct: false },
       { choice: "Mikonos", correct: false },
