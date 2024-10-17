@@ -116,6 +116,7 @@ section {
   max-width: 80%;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -127,6 +128,7 @@ section {
   background-color: rgba(255, 255, 255, 0.7);
   animation: appear 500ms ease-in;
   opacity: 1;
+  
 }
 
 
@@ -183,6 +185,7 @@ form {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .cta-choice {
@@ -218,6 +221,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 footer p {
@@ -309,7 +313,7 @@ footer p {
 
   h1 {
     line-height: 50px;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   nav {

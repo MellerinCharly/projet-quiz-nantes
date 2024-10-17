@@ -16,6 +16,7 @@
 
 .img-choice-wrapper {
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
   gap: 1rem;
 }
@@ -45,10 +46,6 @@
   cursor: pointer;
 }
 
-.text-quest {
-  display: flex;
-  align-items: center;
-}
 
 .image-quest {
   width: 300px;
@@ -59,7 +56,7 @@
 .statement {
   font-size: 30px;
   font-weight: 200;
-  padding: 0 30px;
+  width: 300px;
   text-align: center;
   align-self: center;
 }
@@ -74,6 +71,7 @@
 
  .img-choice-wrapper {
   flex-direction: column-reverse;
+  
  }
 }
 
@@ -128,6 +126,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .statement {
+    width: 200px;
   }
 
   .choice {
