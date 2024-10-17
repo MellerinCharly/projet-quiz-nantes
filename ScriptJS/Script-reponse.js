@@ -2,7 +2,7 @@
 
 export const quizGeoData = [
   {
-    picture: "/GameImage/tour-bretagne.jpg",
+    picture: "./GameImage/tour-bretagne.jpg",
     answers: [
       { choice: "Tour Montparnasse", correct: false },
       { choice: "Tour LU", correct: false },
@@ -11,7 +11,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: "/GameImage/exterieur-chateau-des-ducs-de-bretagne.jpg",
+    picture: "./GameImage/exterieur-chateau-des-ducs-de-bretagne.jpg",
     answers: [
       { choice: "Chateau des Ducs de Bretagne", correct: true },
       { choice: "Chateau d'Ax", correct: false },
@@ -20,7 +20,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: "/GameImage/jardin-ile-de-versaille-scaled.jpeg",
+    picture: "./GameImage/jardin-ile-de-versaille-scaled.jpeg",
     answers: [
       { choice: "Jardin des Plantes", correct: false },
       { choice: "Jardin de Versailles", correct: false },
@@ -29,7 +29,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: "/GameImage/063.jpg",
+    picture: "./GameImage/063.jpg",
     answers: [
       { choice: "Chantier Naval", correct: false },
       { choice: "Village de Trentemoult", correct: false },
@@ -38,7 +38,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: "/GameImage/Graslin.jpg",
+    picture: "./GameImage/Graslin.jpg",
     answers: [
       { choice: "Place Commerce", correct: false },
       { choice: "Place Graslin", correct: true },
@@ -47,7 +47,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: "/GameImage/2012_nantes_cathedrale_002.jpg",
+    picture: "./GameImage/2012_nantes_cathedrale_002.jpg",
     answers: [
       { choice: "Cathédrale Notre-Dame de Nantes", correct: false },
       { choice: "Cathédrale Saint Jacques & Saint Michel", correct: false },
@@ -56,7 +56,8 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: "/GameImage/m_sozo-hotel-nantes-106286_1155x773_center_center.jpg",
+    picture:
+      "./GameImage/m_sozo-hotel-nantes-106286_1155x773_center_center.jpg",
     answers: [
       { choice: "Les Machineries de Nantes", correct: false },
       { choice: "L'Elephant Géant", correct: false },
@@ -65,7 +66,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: "/GameImage/8975.jpg",
+    picture: "./GameImage/8975.jpg",
     answers: [
       { choice: "La tour Bretagne", correct: false },
       { choice: "La tour de Garde", correct: false },
@@ -74,7 +75,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: "/GameImage/Jardin-Extraordinaire-9226.jpg",
+    picture: "./GameImage/Jardin-Extraordinaire-9226.jpg",
     answers: [
       { choice: "Le Jardin des Plantes", correct: false },
       { choice: "Le Jardin japonais", correct: false },
@@ -83,7 +84,7 @@ export const quizGeoData = [
     ],
   },
   {
-    picture: "/GameImage/wild.png",
+    picture: "./GameImage/wild.png",
     answers: [
       { choice: "L'Ecole sauvage du Code", correct: false },
       { choice: "La Capy Code School", correct: false },
@@ -195,7 +196,7 @@ export const quizCultureData = [
     question:
       "Nantes est dominée par la Tour de Bretagne, haute de 144m, dont la particularité est d'être :",
     answers: [
-      { choice: "La plus haute tout de Nantes", correct: true },
+      { choice: "La plus haute tour de Nantes", correct: true },
       { choice: "Le plus petit building de province", correct: false },
       { choice: "Le plus haut building du monde", correct: false },
       { choice: "Le plus grand building des Etats-Unis", correct: false },

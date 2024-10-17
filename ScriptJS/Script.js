@@ -41,10 +41,10 @@ const setTitle = (value) => {
       titleQuiz.textContent = "Trouve le lieu à Nantes !";
       break;
     case "historyQuiz":
-      titleQuiz.textContent = "Apprends l'histoire de Nantes !";
+      titleQuiz.textContent = "Apprend l'histoire de Nantes !";
       break;
     case "cultureQuiz":
-      titleQuiz.textContent = "Cultives toi à  Nantes !";
+      titleQuiz.textContent = "Cultive toi à  Nantes !";
       break;
   }
 };
