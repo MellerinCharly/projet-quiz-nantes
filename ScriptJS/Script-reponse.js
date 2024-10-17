@@ -101,7 +101,7 @@ export const quizHistoryData = [
     answers: [
       { choice: "Musée Doré", correct: false },
       { choice: "Julien Doré", correct: false },
-      { choice: "Musée d'Obrée", correct: true },
+      { choice: "Musée Dobrée", correct: true },
       { choice: "La réponse D", correct: false },
     ],
   },
@@ -124,7 +124,7 @@ export const quizHistoryData = [
     ],
   },
   {
-    question: "/Où est né Jules Verne ?",
+    question: "Où est né Jules Verne ?",
     answers: [
       { choice: "Nantes", correct: true },
       { choice: "Dans la Loire", correct: false },
@@ -138,7 +138,7 @@ export const quizHistoryData = [
       { choice: "Le poussin Piou", correct: false },
       { choice: "Le nid", correct: true },
       { choice: "Le cacatoès", correct: false },
-      { choice: "Serdaigle", correct: false },
+      { choice: "La maison Serdaigle", correct: false },
     ],
   },
   {
@@ -193,7 +193,7 @@ export const quizHistoryData = [
 export const quizCultureData = [
   {
     question:
-      "La ville moderne est dominée par la Tour de Bretagne, haute de 144m, dont la particularité est d'être :",
+      "Nantes est dominée par la Tour de Bretagne, haute de 144m, dont la particularité est d'être :",
     answers: [
       { choice: "La plus haute tout de Nantes", correct: true },
       { choice: "Le plus petit building de province", correct: false },
@@ -233,7 +233,7 @@ export const quizCultureData = [
   },
   {
     question:
-      "Située près de l'océan Atlantique Nantes fut la capitale du Duché de Bretagne. De quelle région est-elle aujourd'hui la préfecture ?",
+      "Située près de l'océan Atlantique, Nantes fut la capitale du Duché de Bretagne. De quelle région est-elle aujourd'hui la préfecture ?",
     answers: [
       { choice: "Californie", correct: false },
       { choice: "Mikonos", correct: false },
@@ -251,7 +251,7 @@ export const quizCultureData = [
     ],
   },
   {
-    question: "En quelle année a lieu le premier Hellfest ?",
+    question: "En quelle année a eu lieu le premier Hellfest ?",
     answers: [
       { choice: "2044", correct: false },
       { choice: "1995", correct: false },
@@ -272,8 +272,8 @@ export const quizCultureData = [
     question: "Quel YouTubeur est d'origine nantaise ?",
     answers: [
       { choice: "Aya Nakamura", correct: false },
-      { choice: "Cyprien", correct: false },
-      { choice: "Le joueur du Grenier (Bon anniversaire)", correct: true },
+      { choice: "Charly de la Wild", correct: false },
+      { choice: "Charlie Danger", correct: true },
       { choice: "Rémi Gaillard", correct: false },
     ],
   },
@@ -283,7 +283,7 @@ export const quizCultureData = [
       { choice: "Les 4 points cardinaux", correct: false },
       { choice: "Les 4 éléments", correct: false },
       { choice: "Le 5ème élément", correct: false },
-      { choice: "Les 4 ssaisons", correct: true },
+      { choice: "Les 4 saisons", correct: true },
     ],
   },
 ];

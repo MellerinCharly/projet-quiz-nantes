@@ -33,7 +33,6 @@ export function startQuiz(quizName) {
   const cardScore = document.querySelector(".card-score");
   const scoreContainer = document.querySelector("#userScore");
   const scorePlace = scoreContainer.querySelector("span");
-  console.log({ scoreplace: scorePlace });
 
   //HELPER
   const getChoicesButtons = () => document.querySelectorAll(".choice");
@@ -84,7 +83,6 @@ export function startQuiz(quizName) {
             button.style.background = "#B7B7B7";
           } else {
             choiceUser = button.textContent;
-            console.log({ choiceUser });
           }
         });
       });
@@ -94,8 +92,6 @@ export function startQuiz(quizName) {
   const goToQuestion = (questionIndex) => {
     removeNextButton();
     currentQuestion = currentQuizData[questionIndex];
-    console.log({ lengthData: currentQuizData.length });
-    console.log({ lengthQuestionPassed: questionIndex });
     if (questionIndex !== currentQuizData.length) {
       validationButton.classList.remove("displaynone");
       const choicesWrapper = document.querySelector(".choices-wrapper");
@@ -129,11 +125,9 @@ export function startQuiz(quizName) {
     const buttonUserChoice = Array.from(choices).find(
       (button) => button.dataset.id === USER_CHOICE_INDICATOR
     );
-    console.log(buttonUserChoice);
     if (choiceUser === goodAnswer.choice) {
       buttonUserChoice.style.background = "#6FBB7C";
       score++;
-      console.log({ scoreUser: score });
     } else {
       buttonUserChoice.style.background = "#E65C0E";
       const choicesButtons = getChoicesButtons();
