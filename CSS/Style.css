@@ -34,6 +34,7 @@ nav {
   align-items: center;
   gap: 2.5rem;
   padding: 1rem;
+  font-family: var(--body-font);
 }
 .links-wrapper {
   padding-top: 16px;
@@ -50,6 +51,8 @@ nav {
 .nav-link:hover {
   text-decoration: underline solid 2px var(--font-color);
   text-underline-offset: 8px;
+  cursor: pointer;
+  
 }
 
 nav img {
