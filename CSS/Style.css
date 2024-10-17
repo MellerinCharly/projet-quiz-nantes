@@ -72,6 +72,10 @@ nav img {
   width: 150px;
 }
 
+nav img:hover {
+  cursor: pointer;
+}
+
 /* Main */
 span {
   font-size: 50px;
@@ -105,7 +109,11 @@ h1 {
   padding: 15px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.7);
+  animation: appear 500ms ease-in;
+  opacity: 1;
 }
+
+
 
 .card-home {
   display: flex;
@@ -145,7 +153,6 @@ form {
 
 .cta {
   width: 30vh;
-  /* padding: 15px; */
   border-radius: 20px;
   color: var(--cta-color);
   background-color: var(--secondary-color);
@@ -180,6 +187,7 @@ form {
 
 .cta:hover {
   cursor: pointer;
+  box-shadow: inset 0px 0px 0 3px var(--font-color);
 }
 
 /* Footer */
@@ -200,6 +208,16 @@ footer p {
 /*JS*/
 .displaynone {
   display: none;
+  /* opacity: 0; */
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* CONFETTIS */

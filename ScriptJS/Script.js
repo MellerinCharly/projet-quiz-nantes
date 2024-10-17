@@ -32,6 +32,22 @@ const displayNameFormIfNecesarry = (localStorageProperty /*string*/) => {
   }
 };
 
+const setTitle = (value) => {
+  const titleQuiz = document.querySelector(".titleQuiz");
+  console.log({ value });
+  switch (value) {
+    case "geoQuiz":
+      titleQuiz.textContent = "Trouve le lieu à Nantes !";
+      break;
+    case "historyQuiz":
+      titleQuiz.textContent = "Apprends l'histoire de Nantes !";
+      break;
+    case "cultureQuiz":
+      titleQuiz.textContent = "Cultives toi à  Nantes !";
+      break;
+  }
+};
+
 export function runApplication() {
   displayNameFormIfNecesarry("userName");
   console.log({ currentUserName });
@@ -43,6 +59,7 @@ export function runApplication() {
         setVariablesInLocalStorage("userName", currentUserName); // save preferences
       }
       startQuiz(btn.dataset.quiz);
+      setTitle(btn.dataset.quiz);
       quizzesButtons.forEach((quizBtn) => {
         quizBtn.classList.remove("active");
       });
@@ -53,9 +70,9 @@ export function runApplication() {
 }
 
 //NAVBAR BUTTONS
-navLinkGeo.addEventListener("click", () => {
-  startQuiz("geoQuiz");
-});
+// navLinkGeo.addEventListener("click", () => {
+//   startQuiz("geoQuiz");
+// });
 
 // Bouton Reload
 homePage.addEventListener("click", () => {

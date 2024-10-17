@@ -38,6 +38,8 @@
   border: none;
   font-size: medium;
   margin: 10px;
+  animation: appear 500ms ease-in;
+  opacity: 1;
 }
 
 .choice:hover {
@@ -62,6 +64,8 @@
   text-align: center;
   align-self: center;
 }
+
+
 
 /*MEDIA QUERIES*/
 
@@ -141,6 +145,7 @@
     border-radius: 10px;
     border: none;
     font-size: medium;
+   
   }
 
   .image-quest {
