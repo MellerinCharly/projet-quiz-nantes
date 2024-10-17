@@ -11,9 +11,7 @@ const quizzes = {
   cultureQuiz: quizCultureData,
 };
 
-const USER_CHOICE_INDICATOR = "user-choice"; //conventions => for all importants constants who doesn't change -> in capital
-//and avoid to copy paste the new value if it changes in all the programm
-//and allow devs to use it in the whole programm
+const USER_CHOICE_INDICATOR = "user-choice";
 const CONFETTI_CANVAS_ID = "confetti-canvas";
 
 export function startQuiz(quizName) {
@@ -70,7 +68,6 @@ export function startQuiz(quizName) {
     validationButton.classList.remove("displaynone");
     removeNextButton();
     removeChoicesButtons();
-    // navLinkGeo.classList.add("disabledButton");
   };
 
   const addListenerOnChoicesButtons = () => {
@@ -154,8 +151,7 @@ export function startQuiz(quizName) {
   };
 
   //CONFETTIS
-
-  function giveConfettis() {
+  const giveConfettis = () => {
     const canvas = document.createElement("canvas");
     canvas.id = CONFETTI_CANVAS_ID;
     cardScore.appendChild(canvas);
@@ -194,7 +190,7 @@ export function startQuiz(quizName) {
       shapes: [tree],
       colors: ["#8d960f", "#be0f10", "#445404"],
     });
-  }
+  };
 
   const giveScoreUser = () => {
     // navLinkGeo.classList.toggle("disabledButton");
@@ -225,5 +221,3 @@ export function startQuiz(quizName) {
   });
   replayButton.addEventListener("click", replayQuiz);
 }
-
-// BOUTON ACCUEIL
