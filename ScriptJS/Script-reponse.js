@@ -50,7 +50,7 @@ export const quizGeoData = [
     picture: "./GameImage/2012_nantes_cathedrale_002.jpg",
     answers: [
       { choice: "Cathédrale Notre-Dame de Nantes", correct: false },
-      { choice: "Cathédrale Saint Jacques & Saint Michel", correct: false },
+      { choice: "Cathédrale St Jacques & St Michel", correct: false },
       { choice: "Cathédrale des ducs de Bretagne", correct: false },
       { choice: "Cathédrale Saint Pierre & Saint Paul", correct: true },
     ],
