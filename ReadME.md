@@ -145,6 +145,8 @@ Rendu final :
 - [x] _Creation of the quiz section_
 - [x] _Creation of the footer_
 - [x] _Javascript part_
+- [x] _*Creation of a home-card with categories*
+
 
 ## *Beginning :*
 
@@ -157,6 +159,14 @@ Rendu final :
 *Responsive part on Figma.*
 
 *Adding the variables for Javascript*
+
+*Adding a home-card to guide users toward the aimed categorie*
+
+*Adding confettis while displaying the score.*
+
+*Blocking the choice of categories without writing a user name*
+
+*Adding a capital letter if the user don't write it on user name.*
 
 
 ## *Made with :*
