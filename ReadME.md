@@ -133,7 +133,7 @@ Team KIPIK !
 
 Rendu final :
 
-![Screenshot of final.]((https://i.ibb.co/GphgwHJ/Screen-Site.jpg))
+![Screenshot of final.](https://i.ibb.co/GphgwHJ/Screen-Site.jpg)
 
 
 ## *Second part :*
