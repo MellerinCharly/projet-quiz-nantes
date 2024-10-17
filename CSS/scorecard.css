@@ -43,7 +43,7 @@
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1140px) {
   .score-section {
-    width: 60%
+    max-height: 60%
   }
 
   #userScore span {
@@ -59,6 +59,6 @@
 
 @media screen and (max-width: 580px) {
   .score-section {
-    width: 80%
+    max-height: 60%
   }
 }
