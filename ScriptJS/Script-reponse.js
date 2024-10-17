@@ -194,7 +194,7 @@ export const quizHistoryData = [
 export const quizCultureData = [
   {
     question:
-      "Nantes est dominée par la Tour de Bretagne, haute de 144m, dont la particularité est d'être :",
+      "Nantes est dominée par la Tour de Bretagne dont la particularité est d'être :",
     answers: [
       { choice: "La plus haute tour de Nantes", correct: true },
       { choice: "Le plus petit building de province", correct: false },
