@@ -158,13 +158,13 @@ Rendu final :
 
 *Responsive part on Figma.*
 
-*Adding the variables for Javascript*
+*Adding the variables for Javascript.*
 
-*Adding a home-card to guide users toward the aimed categorie*
+*Adding a home-card to guide users toward the aimed categorie.*
 
 *Adding confettis while displaying the score.*
 
-*Blocking the choice of categories without writing a user name*
+*Blocking the choice of categories without writing a user name.*
 
 *Adding a capital letter if the user don't write it on user name.*
 
