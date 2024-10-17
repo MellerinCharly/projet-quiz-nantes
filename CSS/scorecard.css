@@ -1,4 +1,6 @@
 
+
+
 .score-section h2 {
   color: black;
 }
@@ -38,14 +40,18 @@
   pointer-events: none;
 }
 /*MEDIA QUERIES*/
-@media screen and (max-width: 750px) {
-  .score-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+@media screen and (max-width: 1140px) {
+  /* .card-score {
+    padding: 100px;
+  } */
+  .score-section {
+    width: 60%
   }
-}
-@media screen and (max-width: 580px) {
+
+  #userScore span {
+    font-size: 2rem;
+  }
+
   .score-wrapper {
     display: flex;
     flex-direction: column;
