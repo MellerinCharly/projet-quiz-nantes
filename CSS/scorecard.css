@@ -1,4 +1,6 @@
 
+
+
 .score-section h2 {
   color: black;
 }
@@ -38,17 +40,24 @@
   pointer-events: none;
 }
 /*MEDIA QUERIES*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1140px) {
+  .score-section {
+    width: 60%
+  }
+
+  #userScore span {
+    font-size: 2rem;
+  }
+
   .score-wrapper {
     display: flex;
     flex-direction: column;
     gap: 2px;
   }
 }
+
 @media screen and (max-width: 580px) {
-  .score-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+  .score-section {
+    width: 80%
   }
 }

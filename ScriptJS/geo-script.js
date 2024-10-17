@@ -3,19 +3,13 @@ import {
   quizGeoData,
   quizHistoryData,
 } from "./Script-reponse.js";
-import {
-  currentUserName,
-  currentUserNamePlaces,
-  navLinkGeo,
-} from "./Script.js";
+import { currentUserName, currentUserNamePlaces } from "./Script.js";
 
 const quizzes = {
   geoQuiz: quizGeoData,
   historyQuiz: quizHistoryData,
   cultureQuiz: quizCultureData,
 };
-
-//TODO: In JS LocalStorage
 
 const USER_CHOICE_INDICATOR = "user-choice"; //conventions => for all importants constants who doesn't change -> in capital
 //and avoid to copy paste the new value if it changes in all the programm
@@ -111,6 +105,7 @@ export function startQuiz(quizName) {
       if (currentQuizData === quizzes["geoQuiz"]) {
         statement.classList.add("displaynone");
         currentPicture.classList.remove("displaynone");
+        currentPicture.classList.remove("loaded");
         currentPicture.src = currentQuestion.picture;
       } else {
         currentPicture.classList.add("displaynone");
