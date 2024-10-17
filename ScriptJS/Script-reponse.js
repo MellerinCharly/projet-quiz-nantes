@@ -199,7 +199,7 @@ export const quizCultureData = [
       { choice: "La plus haute tour de Nantes", correct: true },
       { choice: "Le plus petit building de province", correct: false },
       { choice: "Le plus haut building du monde", correct: false },
-      { choice: "Le plus grand building des Etats-Unis", correct: false },
+      { choice: "Le plus grand building des USA", correct: false },
     ],
   },
   {

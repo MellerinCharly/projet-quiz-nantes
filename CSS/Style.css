@@ -112,8 +112,8 @@ h1 {
 }
 
 section {
-  height: 60%;
-  width: 50%;
+  max-height: 80%;
+  max-width: 80%;
 }
 
 .card {
@@ -293,10 +293,15 @@ footer p {
 }
 
 @media screen and (max-width: 580px) {
+  .nav-link:hover,
+.nav-link.active {
+  text-decoration: none;
+  text-underline-offset: 0px;
+  cursor: pointer;
+}
+
   .card {
     border: #000000 3px solid;
-    /* height: 50vh;
-    width: 80vw; */
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     margin-bottom: 40px;
