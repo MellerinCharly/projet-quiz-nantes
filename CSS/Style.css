@@ -69,6 +69,10 @@ nav img {
   width: 150px;
 }
 
+nav img:hover {
+  cursor: pointer;
+}
+
 /* Main */
 span {
   font-size: 50px;
@@ -180,6 +184,7 @@ form {
 
 .cta:hover {
   cursor: pointer;
+  box-shadow: inset 0px 0px 0 3px var(--font-color);
 }
 
 /* Footer */
