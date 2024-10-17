@@ -253,9 +253,7 @@ footer p {
   text-decoration: underline solid 2px var(--font-color);
   text-underline-offset: 8px;
 }
-/* .disabledChoices {
-  pointer-events: none;
-} */
+
 .mandatory {
   border: red 1px solid;
 }
@@ -268,7 +266,7 @@ footer p {
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1300px) {
   section {
-    height: 70%;
+    height: 85%;
   }
   
   .quiz-choices {
@@ -279,12 +277,8 @@ footer p {
 
 
 @media screen and (max-width: 750px) {
-  
-
   .card {
     border: #000000 3px solid;
-    /* height: 50vh;
-    width: 450px; */
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.7);
   }
