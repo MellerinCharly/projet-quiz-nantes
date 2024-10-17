@@ -133,7 +133,7 @@ Team KIPIK !
 
 Rendu final :
 
-![Screenshot of final.]([https://i.ibb.co/7NnWqyC/Capture-d-e-cran-2024-10-10-a-15-16-48.png](https://i.ibb.co/GphgwHJ/Screen-Site.jpg))
+![Screenshot of final.]((https://i.ibb.co/GphgwHJ/Screen-Site.jpg))
 
 
 ## *Second part :*
