@@ -28,6 +28,8 @@ Maquette en Responsive :
 
 Rendu final :
 
+![Screenshot of final.](https://i.ibb.co/GphgwHJ/Screen-Site.jpg)
+
 
 ## Seconde partie :
 
@@ -37,7 +39,7 @@ HTML/CSS associés au JS
 - [x] Création de la nav-bar
 - [x] Création de la section Quiz
 - [x] Création du footer
-- [ ] Partie JS
+- [x] Partie JS
 - [x] Création d'une home-card avec les catégories
 
 ## Démarrage :
@@ -49,9 +51,17 @@ Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel
 
 Responsive sur figma.
 
-Ajout des variables JS
+Ajout des variables JS.
 
-Ajout d'une home-card pour orienter l'utilisateur vers la catégorie qu'il souhaite
+Ajout d'une home-card pour orienter l'utilisateur vers la catégorie qu'il souhaite.
+
+Ajout des confétis lors de l'affichage du score.
+
+Impossibilité d'aller dans une catégorie sans mettre un nom. 
+
+Ajout d'une majuscule sur la première lettre après avoit validé le nom.
+
+Ajout d'un effet fondu quand on change de catégorie et/ou de question.
 
 
 ## Fabriqué avec :
@@ -120,6 +130,10 @@ Team KIPIK !
  *Responsive model :*
 
 *![Screenshot of Respnsive.](https://i.ibb.co/7NnWqyC/Capture-d-e-cran-2024-10-10-a-15-16-48.png)*
+
+Rendu final :
+
+![Screenshot of final.]([https://i.ibb.co/7NnWqyC/Capture-d-e-cran-2024-10-10-a-15-16-48.png](https://i.ibb.co/GphgwHJ/Screen-Site.jpg))
 
 
 ## *Second part :*
