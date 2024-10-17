@@ -55,7 +55,8 @@ nav {
   cursor: pointer;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   text-decoration: underline solid 2px var(--font-color);
   text-underline-offset: 8px;
 }
@@ -74,6 +75,15 @@ span {
   font-size: 50px;
   width: auto;
   height: 50px;
+}
+
+.currentUserName {
+  display: inline-block;
+  color: var(--choice-color);
+}
+
+.currentUserName::first-letter {
+  text-transform: capitalize;
 }
 
 main {
@@ -201,12 +211,12 @@ footer p {
 
 /* CONFETTIS */
 #confetti-canvas {
-  position: fixed; 
-  z-index: 999; 
-  top: 0; 
-  left: 0; 
-  width: 100vw; 
-  height: 100vh; 
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   pointer-events: none;
 }
 
@@ -262,4 +272,3 @@ footer p {
     line-height: 50px;
   }
 }
-
