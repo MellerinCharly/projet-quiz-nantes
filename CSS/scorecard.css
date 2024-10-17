@@ -41,9 +41,6 @@
 }
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1140px) {
-  /* .card-score {
-    padding: 100px;
-  } */
   .score-section {
     width: 60%
   }
@@ -56,5 +53,11 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .score-section {
+    width: 80%
   }
 }
