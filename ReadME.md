@@ -76,7 +76,7 @@ Excalidraw
 
 Team KIPIK !
 
-- Émilie DE DUYER
+- Émilie DE DUYVER
 - Github : [EmiLy-Ly-san](https://github.com/EmiLy-Ly-san)
   - :envelope:  emilie.deduyver@gmail.com
 
@@ -181,7 +181,7 @@ Rendu final :
 
 *Team KIPIK !*
 
-- _Émilie DE DUYER_
+- _Émilie DE DUYVER_
 - _Github : [EmiLy-Ly-san](https://github.com/EmiLy-Ly-san)_
   - :envelope:  _emilie.deduyver@gmail.com_
 
