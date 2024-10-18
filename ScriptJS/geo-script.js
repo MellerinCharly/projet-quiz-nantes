@@ -89,6 +89,9 @@ export function startQuiz(quizName) {
   const goToQuestion = (questionIndex) => {
     removeNextButton();
     currentQuestion = currentQuizData[questionIndex];
+    console.log({ currentQuestion });
+    console.log({ questionIndex });
+    console.log({ currentQuizData });
     if (questionIndex !== currentQuizData.length) {
       validationButton.classList.remove("displaynone");
       const choicesWrapper = document.querySelector(".choices-wrapper");
@@ -109,10 +112,12 @@ export function startQuiz(quizName) {
         statement.classList.remove("displaynone");
         statement.textContent = currentQuestion.question;
       }
-      currentQuestionIndex++;
+      questionIndex++;
+      console.log({ currentQuestionIndex });
     } else {
       stopQuiz();
     }
+    currentQuestionIndex++;
   };
 
   const giveCorrection = (choices) => {
@@ -137,7 +142,7 @@ export function startQuiz(quizName) {
 
   const handleClickOnNextButton = () => {
     removeChoicesButtons();
-    goToQuestion(currentQuestionIndex + 1);
+    goToQuestion(currentQuestionIndex);
   };
 
   const createNextButton = () => {
@@ -193,7 +198,6 @@ export function startQuiz(quizName) {
   };
 
   const giveScoreUser = () => {
-    // navLinkGeo.classList.toggle("disabledButton");
     scorePlace.innerHTML = `${score} / ${currentQuizData.length}`;
     currentUserNamePlaces.forEach((place) => {
       place.textContent = currentUserName;
