@@ -216,6 +216,7 @@ export function startQuiz(quizName) {
     startQuiz(currentQuizName);
   };
 
+  
   // PROGRAM EXECUTION
   removeConfettisCanvas();
   updateCardQuest();
