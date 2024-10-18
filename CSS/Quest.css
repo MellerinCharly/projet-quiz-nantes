@@ -16,6 +16,7 @@
 
 .img-choice-wrapper {
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
   gap: 1rem;
 }
@@ -45,10 +46,6 @@
   cursor: pointer;
 }
 
-.text-quest {
-  display: flex;
-  align-items: center;
-}
 
 .image-quest {
   width: 300px;
@@ -59,7 +56,7 @@
 .statement {
   font-size: 30px;
   font-weight: 200;
-  padding: 0 25px;
+  width: 300px;
   text-align: center;
   align-self: center;
 }
@@ -74,14 +71,12 @@
 
  .img-choice-wrapper {
   flex-direction: column-reverse;
+  
  }
 }
 
 @media screen and (max-width: 750px) {
-    section {
-      height: 80vh;
-    }
-
+   
   .card.card-quest {
     border: #000000 3px solid;
     height: 100%;
@@ -119,6 +114,9 @@
 }
 
 @media screen and (max-width: 580px) {
+  section {
+    height: 90vh;
+  }
   .card.card-quest {
     border: #000000 3px solid;
     border-radius: 20px;
@@ -126,8 +124,12 @@
     padding: 10px 7px 7px 7px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    align-items: center;   
+  }
+
+  .statement {
+    width: 200px;
+    font-size: 22px;
   }
 
   .choice {

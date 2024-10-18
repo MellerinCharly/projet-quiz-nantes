@@ -28,6 +28,8 @@ Maquette en Responsive :
 
 Rendu final :
 
+![Screenshot of final.](https://i.ibb.co/GphgwHJ/Screen-Site.jpg)
+
 
 ## Seconde partie :
 
@@ -37,21 +39,29 @@ HTML/CSS associés au JS
 - [x] Création de la nav-bar
 - [x] Création de la section Quiz
 - [x] Création du footer
-- [ ] Partie JS
+- [x] Partie JS
 - [x] Création d'une home-card avec les catégories
 
 ## Démarrage :
 
-Pour démarrer notre quête, nous avons commencé par un wirefram. 
+Pour démarrer notre quête, nous avons commencé par un wireframe. 
 
 S'en est suivi un développement plus poussé du site sur figma (avec ajout des couleurs, des composants, typographie etc...)
 Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel lien ?, Quel résultat ?, Comment l'afficher ? etc...)
 
 Responsive sur figma.
 
-Ajout des variables JS
+Ajout des variables JS.
 
-Ajout d'une home-card pour orienter l'utilisateur vers la catégorie qu'il souhaite
+Ajout d'une home-card pour orienter l'utilisateur vers la catégorie qu'il souhaite.
+
+Ajout des confettis lors de l'affichage du score.
+
+Impossibilité d'aller dans une catégorie sans mettre un nom. 
+
+Ajout d'une majuscule sur la première lettre après avoit validé le nom.
+
+Ajout d'un effet fondu quand on change de catégorie et/ou de question.
 
 
 ## Fabriqué avec :
@@ -66,7 +76,7 @@ Excalidraw
 
 Team KIPIK !
 
-- Émilie DE DUYER
+- Émilie DE DUYVER
 - Github : [EmiLy-Ly-san](https://github.com/EmiLy-Ly-san)
   - :envelope:  emilie.deduyver@gmail.com
 
@@ -121,6 +131,10 @@ Team KIPIK !
 
 *![Screenshot of Respnsive.](https://i.ibb.co/7NnWqyC/Capture-d-e-cran-2024-10-10-a-15-16-48.png)*
 
+Rendu final :
+
+![Screenshot of final.](https://i.ibb.co/GphgwHJ/Screen-Site.jpg)
+
 
 ## *Second part :*
 
@@ -130,11 +144,13 @@ Team KIPIK !
 - [x] _Creation of the nav-bar_
 - [x] _Creation of the quiz section_
 - [x] _Creation of the footer_
-- [ ] _Javascript part_
+- [x] _Javascript part_
+- [x] _Creation of a home-card with categories_
+
 
 ## *Beginning :*
 
-*At first, we start with the creation of a Wirefram.*
+*At first, we start with the creation of a Wireframe.*
 
 *It was followed by an modeling more precise on Figma (we add colours, components, fonts etc..)*
 *We add differents views of our site (what happened when we click on some links ? Results ? How it'll show finally)*
@@ -142,7 +158,15 @@ Team KIPIK !
 
 *Responsive part on Figma.*
 
-*Adding the variables for Javascript*
+*Adding the variables for Javascript.*
+
+*Adding a home-card to guide users toward the aimed categorie.*
+
+*Adding confettis while displaying the score.*
+
+*Blocking the choice of categories without writing a user name.*
+
+*Adding a capital letter if the user don't write it on user name.*
 
 
 ## *Made with :*
@@ -157,7 +181,7 @@ Team KIPIK !
 
 *Team KIPIK !*
 
-- _Émilie DE DUYER_
+- _Émilie DE DUYVER_
 - _Github : [EmiLy-Ly-san](https://github.com/EmiLy-Ly-san)_
   - :envelope:  _emilie.deduyver@gmail.com_
 

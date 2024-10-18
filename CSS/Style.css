@@ -95,7 +95,7 @@ span {
 main {
   flex: 1 0 auto;
   display: flex;
-  justify-content: center; /*center est le bon */
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-size: cover;
@@ -112,8 +112,11 @@ h1 {
 }
 
 section {
-  height: 60%;
-  width: 50%;
+  max-height: 80%;
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -125,6 +128,7 @@ section {
   background-color: rgba(255, 255, 255, 0.7);
   animation: appear 500ms ease-in;
   opacity: 1;
+  
 }
 
 
@@ -181,6 +185,7 @@ form {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .cta-choice {
@@ -216,6 +221,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 footer p {
@@ -253,9 +259,7 @@ footer p {
   text-decoration: underline solid 2px var(--font-color);
   text-underline-offset: 8px;
 }
-/* .disabledChoices {
-  pointer-events: none;
-} */
+
 .mandatory {
   border: red 1px solid;
 }
@@ -267,9 +271,7 @@ footer p {
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1300px) {
-  section {
-    height: 70%;
-  }
+  
   
   .quiz-choices {
     flex-direction: column;
@@ -279,12 +281,8 @@ footer p {
 
 
 @media screen and (max-width: 750px) {
-  
-
   .card {
     border: #000000 3px solid;
-    /* height: 50vh;
-    width: 450px; */
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.7);
   }
@@ -299,10 +297,15 @@ footer p {
 }
 
 @media screen and (max-width: 580px) {
+  .nav-link:hover,
+.nav-link.active {
+  text-decoration: none;
+  text-underline-offset: 0px;
+  cursor: pointer;
+}
+  
   .card {
     border: #000000 3px solid;
-    /* height: 50vh;
-    width: 80vw; */
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     margin-bottom: 40px;
@@ -310,7 +313,7 @@ footer p {
 
   h1 {
     line-height: 50px;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   nav {

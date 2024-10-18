@@ -50,7 +50,7 @@ export const quizGeoData = [
     picture: "./GameImage/2012_nantes_cathedrale_002.jpg",
     answers: [
       { choice: "Cathédrale Notre-Dame de Nantes", correct: false },
-      { choice: "Cathédrale Saint Jacques & Saint Michel", correct: false },
+      { choice: "Cathédrale St Jacques & St Michel", correct: false },
       { choice: "Cathédrale des ducs de Bretagne", correct: false },
       { choice: "Cathédrale Saint Pierre & Saint Paul", correct: true },
     ],
@@ -194,12 +194,12 @@ export const quizHistoryData = [
 export const quizCultureData = [
   {
     question:
-      "Nantes est dominée par la Tour de Bretagne, haute de 144m, dont la particularité est d'être :",
+      "Nantes est dominée par la Tour de Bretagne dont la particularité est d'être :",
     answers: [
       { choice: "La plus haute tour de Nantes", correct: true },
       { choice: "Le plus petit building de province", correct: false },
       { choice: "Le plus haut building du monde", correct: false },
-      { choice: "Le plus grand building des Etats-Unis", correct: false },
+      { choice: "Le plus grand building des USA", correct: false },
     ],
   },
   {
