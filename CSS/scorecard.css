@@ -1,10 +1,7 @@
-
-
-
 .score-section h2 {
   color: black;
 }
-/* comment  */
+
 .card-score {
   display: flex;
   justify-content: space-evenly;
@@ -12,11 +9,13 @@
   align-items: center;
   padding: 20px;
 }
+
 .card-score p {
   font-family: var(--body-font);
   font-size: 3rem;
   text-align: center;
 }
+
 .score-wrapper span {
   border-width: 1.5px;
   border-style: solid;
@@ -24,6 +23,7 @@
   border-radius: 5px;
   padding: 0 80px;
 }
+
 .score-wrapper {
   display: flex;
   flex-direction: row;
@@ -39,6 +39,7 @@
   height: 100vh; 
   pointer-events: none;
 }
+
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1140px) {
   .score-section {
