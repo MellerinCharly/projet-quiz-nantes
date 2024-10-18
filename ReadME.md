@@ -44,7 +44,7 @@ HTML/CSS associés au JS
 
 ## Démarrage :
 
-Pour démarrer notre quête, nous avons commencé par un wirefram. 
+Pour démarrer notre quête, nous avons commencé par un wireframe. 
 
 S'en est suivi un développement plus poussé du site sur figma (avec ajout des couleurs, des composants, typographie etc...)
 Ajout des différents plans du site (Que se passe-t-il lorsque l'on clic sur tel lien ?, Quel résultat ?, Comment l'afficher ? etc...)
@@ -150,7 +150,7 @@ Rendu final :
 
 ## *Beginning :*
 
-*At first, we start with the creation of a Wirefram.*
+*At first, we start with the creation of a Wireframe.*
 
 *It was followed by an modeling more precise on Figma (we add colours, components, fonts etc..)*
 *We add differents views of our site (what happened when we click on some links ? Results ? How it'll show finally)*
