@@ -86,12 +86,23 @@ export function startQuiz(quizName) {
     });
   };
 
+  const getPictureOrStatement = () => {
+    if (currentQuizData === quizzes["geoQuiz"]) {
+      statement.classList.add("displaynone");
+      currentPicture.classList.remove("displaynone");
+      currentPicture.classList.remove("loaded");
+      currentPicture.src = currentQuestion.picture;
+    } else {
+      currentPicture.classList.add("displaynone");
+      statement.classList.remove("displaynone");
+      statement.textContent = currentQuestion.question;
+    }
+  };
+
   const goToQuestion = (questionIndex) => {
     removeNextButton();
     currentQuestion = currentQuizData[questionIndex];
     console.log({ currentQuestion });
-    console.log({ questionIndex });
-    console.log({ currentQuizData });
     if (questionIndex !== currentQuizData.length) {
       validationButton.classList.remove("displaynone");
       const choicesWrapper = document.querySelector(".choices-wrapper");
@@ -102,17 +113,7 @@ export function startQuiz(quizName) {
         choicesWrapper.append(choiceButton);
       });
       addListenerOnChoicesButtons();
-      if (currentQuizData === quizzes["geoQuiz"]) {
-        statement.classList.add("displaynone");
-        currentPicture.classList.remove("displaynone");
-        currentPicture.classList.remove("loaded");
-        currentPicture.src = currentQuestion.picture;
-      } else {
-        currentPicture.classList.add("displaynone");
-        statement.classList.remove("displaynone");
-        statement.textContent = currentQuestion.question;
-      }
-      questionIndex++;
+      getPictureOrStatement();
       console.log({ currentQuestionIndex });
     } else {
       stopQuiz();
