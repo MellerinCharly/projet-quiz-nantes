@@ -86,9 +86,23 @@ export function startQuiz(quizName) {
     });
   };
 
+  const getPictureOrStatement = () => {
+    if (currentQuizData === quizzes["geoQuiz"]) {
+      statement.classList.add("displaynone");
+      currentPicture.classList.remove("displaynone");
+      currentPicture.classList.remove("loaded");
+      currentPicture.src = currentQuestion.picture;
+    } else {
+      currentPicture.classList.add("displaynone");
+      statement.classList.remove("displaynone");
+      statement.textContent = currentQuestion.question;
+    }
+  };
+
   const goToQuestion = (questionIndex) => {
     removeNextButton();
     currentQuestion = currentQuizData[questionIndex];
+    console.log({ currentQuestion });
     if (questionIndex !== currentQuizData.length) {
       validationButton.classList.remove("displaynone");
       const choicesWrapper = document.querySelector(".choices-wrapper");
@@ -99,20 +113,12 @@ export function startQuiz(quizName) {
         choicesWrapper.append(choiceButton);
       });
       addListenerOnChoicesButtons();
-      if (currentQuizData === quizzes["geoQuiz"]) {
-        statement.classList.add("displaynone");
-        currentPicture.classList.remove("displaynone");
-        currentPicture.classList.remove("loaded");
-        currentPicture.src = currentQuestion.picture;
-      } else {
-        currentPicture.classList.add("displaynone");
-        statement.classList.remove("displaynone");
-        statement.textContent = currentQuestion.question;
-      }
-      currentQuestionIndex++;
+      getPictureOrStatement();
+      console.log({ currentQuestionIndex });
     } else {
       stopQuiz();
     }
+    currentQuestionIndex++;
   };
 
   const giveCorrection = (choices) => {
@@ -137,7 +143,7 @@ export function startQuiz(quizName) {
 
   const handleClickOnNextButton = () => {
     removeChoicesButtons();
-    goToQuestion(currentQuestionIndex + 1);
+    goToQuestion(currentQuestionIndex);
   };
 
   const createNextButton = () => {
@@ -193,7 +199,6 @@ export function startQuiz(quizName) {
   };
 
   const giveScoreUser = () => {
-    // navLinkGeo.classList.toggle("disabledButton");
     scorePlace.innerHTML = `${score} / ${currentQuizData.length}`;
     currentUserNamePlaces.forEach((place) => {
       place.textContent = currentUserName;
